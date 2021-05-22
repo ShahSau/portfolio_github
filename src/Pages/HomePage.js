@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
-import YoutubeIcon from '@material-ui/icons/YouTube';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Particle from '../Components/Particle';
+import Typical from 'react-typical'
 
 function HomePage() {
     return (
@@ -12,21 +13,32 @@ function HomePage() {
                 <Particle />
             </div>
             <div className="typography">
-                <h1>Hi, I'm <span>Lorem Ipsum</span></h1>
+                <h1>Hi, I'm <span>Shahriar Saurov</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Atque nihil voluptates ea dolore vel 
-                    repellat? Quia tenetur non quam exercitationem. Lorem ipsum dolor sit amet.
+                    <Typical
+                    loop={Infinity}
+                    wrapper="p"
+                    steps={[
+                        'I am a software developer 💻',
+                        2000,
+                        'I am a designer ',
+                        2000,
+                        'I am a nano-physics graduate',
+                        2000
+                    ]}
+                    />
                 </p>
                 <div className="icons">
-                    <a href="https://codepen.io/pen/" className="icon i-facebook">
-                        <FacebookIcon />
+                <a href="https://www.linkedin.com/in/shahriar-karim-saurov-53a6ba4b/" className="icon i-linkedin">
+                        <LinkedInIcon />
                     </a>
-                    <a href="https://codepen.io/pen/" className="icon i-github">
+
+                    <a href="https://github.com/ShahSau" className="icon i-github">
                         <GithubIcon />
                     </a>
-                    <a href="https://codepen.io/pen/" className="icon i-youtube">
-                        <YoutubeIcon />
+
+                    <a href="https://twitter.com/saurov_shahriar" className="icon ">
+                        <TwitterIcon />
                     </a>
                 </div>
             </div>
@@ -81,6 +93,12 @@ const HomePageStyled = styled.header`
                 &:hover{
                     border: 2px solid #5F4687;
                     color: #5F4687;
+                }
+            }
+            .i-linkedin{
+                &:hover{
+                    border: 2px solid #0072B1;
+                    color: #0072B1;
                 }
             }
         }
