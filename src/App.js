@@ -11,15 +11,16 @@ import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Route, Switch as Switching } from "react-router";
+import { Route, useLocation, Switch as Switching } from "react-router";
 import Switch from '@material-ui/core/Switch'
 import { IconButton } from "@material-ui/core";
 
-
+import { AnimatePresence, motion } from "framer-motion";
 function App() {
   const [theme, setTheme] = useState('dark-theme');
   const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
+  const location = useLocation()
 
   useEffect(()=>{
     document.documentElement.className = theme;
@@ -62,7 +63,7 @@ function App() {
               <MenuIcon />
           </IconButton>
         </div>
-
+        <AnimatePresence exitBeforeEnter initial={false}>
         <MainContentStyled>
           <div className="lines">
             <div className="line-1"></div>
@@ -71,7 +72,8 @@ function App() {
             <div className="line-4"></div>
           </div>
 
-          <Switching>
+          
+          <Switching location={location} key={Location.pathname}>
             <Route path="/" exact>
               <HomePage />
             </Route>
@@ -91,8 +93,10 @@ function App() {
               <ContactPage />
             </Route>
           </Switching>
+          
 
         </MainContentStyled>
+        </AnimatePresence>
     </div>
   );
 }

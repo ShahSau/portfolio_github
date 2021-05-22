@@ -5,10 +5,18 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Particle from '../Components/Particle';
 import Typical from 'react-typical'
+import {motion} from "framer-motion";
 
 function HomePage() {
     return (
+        <motion.div
+      initial={{opacity: 0, x:250}} 
+      animate={{opacity: 1, x:10}} 
+      exit={{opacity: 0, x:0}} 
+      transition={{delay: 0.25, duration: 1.5}}
+    >
         <HomePageStyled>
+            
             <div className="particle-con">
                 <Particle />
             </div>
@@ -28,6 +36,14 @@ function HomePage() {
                     ]}
                     />
                 </p>
+
+                <motion.div
+                    initial={{scaleY:0}}
+                    animate={{scaleY:1}}
+                    exit={{scaleY:0}}
+                    transition={{delay: 1.5, duration: 1.75}}
+                >
+
                 <div className="icons">
                 <a href="https://www.linkedin.com/in/shahriar-karim-saurov-53a6ba4b/" className="icon i-linkedin">
                         <LinkedInIcon />
@@ -41,8 +57,12 @@ function HomePage() {
                         <TwitterIcon />
                     </a>
                 </div>
+
+                </motion.div>
             </div>
+            
         </HomePageStyled>
+        </motion.div>
     )
 }
 
