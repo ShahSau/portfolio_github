@@ -6,33 +6,64 @@ import ServiceCard from '../Components/ServiceCard';
 import design from '../img/design.svg';
 import intelligence from '../img/intelligence.svg';
 import gamedev from '../img/game-dev.svg';
+import {motion} from "framer-motion";
 
 function ServicesSection() {
     return (
+        <motion.div
+        initial={{opacity: 0,y:250}}
+        animate={{opacity: 1,y:1}}
+        exit={{opacity: 1,y:0}}
+        transition={{delay: 1, duration: 1}}
+    >
         <InnerLayout>
             <ServicesSectionStyled>
-                <Title title={'Services'} span={'services'} />
+                <Title title={'Passion'} span={'Passion'} />
                 <div className="services">
+                <motion.div
+                    initial={{opacity: 0,y:250}}
+                    animate={{opacity: 1,y:1}}
+                    exit={{opacity: 1,y:0}}
+                    transition={{delay: 1, duration: 1.5}}
+                >
                     <ServiceCard 
                         image={design} 
-                        title={'Web Design'} 
+                        title={'Web Development'} 
                         paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
                     />
-                    <div className="mid-card">
-                        <ServiceCard 
-                            image={intelligence} 
-                            title={'Artificial Intelligence'} 
+                     </motion.div>
+                    <div className="mid-card"> </div>
+                    <motion.div
+                    initial={{opacity: 0,y:250}}
+                    animate={{opacity: 1,y:1}}
+                    exit={{opacity: 1,y:0}}
+                    transition={{delay: 1, duration: 1.5}}
+                    >
+                    <ServiceCard 
+                        image={intelligence} 
+                        title={'Image processing'} 
+                        paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                    />    
+                    </motion.div>  
+                    <div className="mid-card"> </div>
+                     <div> 
+                     <motion.div
+                    initial={{opacity: 0,y:250}}
+                    animate={{opacity: 1,y:1}}
+                    exit={{opacity: 1,y:0}}
+                    transition={{delay: 1, duration: 2.25}}
+                    >
+                    <ServiceCard 
+                            image={design} 
+                            title={'Data analysis'} 
                             paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
                         />
-                    </div>
-                    <ServiceCard 
-                        image={gamedev} 
-                        title={'Game Development'} 
-                        paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
-                    />
+                        </motion.div> 
+                     </div> 
                 </div>
             </ServicesSectionStyled>
         </InnerLayout>
+        </motion.div>
     )
 }
 
@@ -53,6 +84,7 @@ const ServicesSectionStyled = styled.section`
         }
        
     }
+
 `;
 
 export default ServicesSection;

@@ -12,8 +12,8 @@ function HomePage() {
         <motion.div
       initial={{opacity: 0, x:250}} 
       animate={{opacity: 1, x:0}} 
-      exit={{opacity: 0, x:-10}} 
-      transition={{delay: 0.25, duration: 1.5}}
+      exit={{opacity: 0, x:-100}} 
+      transition={{delay: 0.0, duration: 1.5}}
     >
         <HomePageStyled>
             
