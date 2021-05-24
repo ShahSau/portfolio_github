@@ -6,7 +6,7 @@ import Resume from '../Components/Resume';
 function ResumePage() {
     return (
         <MainLayout>
-            <Skills />
+            {/* <Skills /> */}
             <Resume />
         </MainLayout>
     )
