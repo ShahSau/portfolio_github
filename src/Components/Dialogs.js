@@ -64,7 +64,7 @@ export default function CustomizedDialogs({handleClickOpen,handleClose, open}) {
         <DialogContent dividers>
           <Typography gutterBottom>
           Thank you for your enquiry.
-          </Typography>
+          </Typography> 
           <Typography gutterBottom>
           Your message has been sent successfully.
           </Typography>
