@@ -13,12 +13,18 @@ function BlogsPage() {
                     {
                         blogs.map((blog)=>{
                             return <div key={blog.id} className={'blog-item'}>
-                                <div className="image">
-                                    <img src={blog.image} alt=""/>
-                                </div>
+                                
                                 <div className="title">
                                     <a href={blog.link}>
                                         {blog.title}
+                                        <div className="image">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
+
+                                </div>
                                     </a>
                                 </div>
                             </div>
@@ -48,13 +54,13 @@ const BlogsStyled = styled.div`
             overflow: hidden;
             padding-bottom: .5rem;
             img{
-                width: 100%;
-                height: 90%;
+                width: 25%;
+                height: 25%;
                 object-fit: cover;
                 transition: all .4s ease-in-out;
                 &:hover{
                     cursor: pointer;
-                    transform: rotate(3deg) scale(1.1);
+                    transform: rotate(10deg) scale(1.5);
                 }
             }
         }

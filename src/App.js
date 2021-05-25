@@ -9,6 +9,7 @@ import ResumePage from './Pages/ResumePage';
 import PortfoliosPage from './Pages/PortfoliosPage';
 import BlogsPage from './Pages/BlogsPage';
 import ContactPage from './Pages/ContactPage';
+import SkillsPage from './Pages/SkillsPage'
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Route, useLocation, Switch as Switching } from "react-router";
@@ -87,12 +88,16 @@ function App() {
             <Route path="/portfolios" exact>
               <PortfoliosPage />
             </Route>
+            <Route path="/skills" exact>
+              <SkillsPage />
+            </Route>
             <Route path="/blogs" exact>
                <BlogsPage />
             </Route>
             <Route path="/contact" exact>
               <ContactPage />
             </Route>
+            
           </Switching>
           
 
