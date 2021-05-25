@@ -2,16 +2,39 @@ import React from 'react';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-import PrimaryButton from '../Components/PrimaryButton';
+// import PrimaryButton from '../Components/PrimaryButton';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
+import emailjs from 'emailjs-com';
+import Dialogs from '../Components/Dialogs'
+
 
 function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
     const location = <LocationOnIcon />
+    const [open, setOpen] = React.useState(false);
+
+    // const handleClickOpen = () => {
+    //   setOpen(true);
+    // };
+    const handleClose = () => {
+      setOpen(false);
+    };
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_dxkidye', 'template_sndsd7q', e.target, 'user_mWLTYsv6XyFsKZpPyXJBc')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+          setOpen(true);
+      }
     return (
         <MainLayout>
             <Title title={'Contact'} span={'Contact'} />
@@ -21,34 +44,39 @@ function ContactPage() {
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
                     </div>
-                    <form  action='https://formsubmit.co/shahriar.saurov@yahoo.com' className='form' method='POST'>
+                    <form className='form' onSubmit={sendEmail}>
                         <div className="form-field">
                             <label htmlFor="name"  >Enter your name*</label>
-                            <input type="text" id="name" />
+                            <input type="text" id="name" name="name"/>
                         </div>
                         <div className="form-field">
                             <label htmlFor="email"  >Enter your email*</label>
-                            <input type="email" id="email" />
+                            <input type="email" id="email" name="email"/>
                         </div>
                         <div className="form-field">
                             <label htmlFor="subject"  >Enter your subject</label>
-                            <input type="text" id="subject" />
+                            <input type="text" id="subject" name="subject"/>
                         </div>
                         <div className="form-field">
                             <label htmlFor="text-area">Enter your Message*</label>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+                            <textarea name="textarea" id="textarea" cols="30" rows="10" name="message"></textarea>
                         </div>
                         <div className="form-field f-button">
-                            <PrimaryButton title={'Send Email'} />
+                           
+                            <input type="submit" className="button" value="Send Email"></input>
+                           
                         </div>
                     </form>
+                    
+
                 </div>
                 <div className="right-content">
-                    <ContactItem title={'Phone'} icon={phone} cont1={'+66-789675637'} cont2={'07663520283'} />
-                    <ContactItem title={'Email'} icon={email} cont1={'loremipsum@gmail.com'} cont2={'info.lorem.ipsum@gmail.com'} />
-                    <ContactItem title={'Address'} icon={location} cont1={'27 Aldrich Road, London, England'} cont2={'United Kingdom'} />
+                    <ContactItem title={'Phone'} icon={phone} cont1={'+358452249949'}  />
+                    <ContactItem title={'Email'} icon={email} cont1={'shahriarksaurov@gmail.com'}/>
+                    <ContactItem title={'Address'} icon={location} cont1={'Liusketie 2, Helsinki, 00710'} cont2={'Finland'} />
                     
                 </div>
+                <Dialogs handleClickOpen={sendEmail} handleClose={handleClose} open={open}/>
             </InnerLayout>
             </ContactPageStyled>
         </MainLayout>
@@ -116,6 +144,27 @@ const ContactPageStyled = styled.section`
                     padding: .8rem 1rem;
                 }
             }
+            .button {
+                position: relative;
+                display: block;
+                width: 200px;
+                height: 36px;
+                border-radius: 18px;
+                background-color: #1c89ff;
+                border: solid 1px transparent;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 300;
+                cursor: pointer;
+                transition: all .1s ease-in-out;
+                &:hover {
+                  background-color: #27408B;
+                  border-color: #fff;
+                  color:#fff;
+                  transition: all .5s ease-in-out;
+                }
+                
+              }
             
         }
     }

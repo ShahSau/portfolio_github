@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-function ContactItem({title, icon, cont1, cont2}) {
+function ContactItem({title, icon, cont1, cont2=''}) {
     return (
         <ContactItemStyled>
             <div className="left-content">
@@ -13,7 +13,8 @@ function ContactItem({title, icon, cont1, cont2}) {
             <div className="right-content">
                 <h6>{title}</h6>
                 <p>{cont1}</p>
-                <p>{cont2}</p>
+                {cont2 !== '' && <p>{cont2}</p>}
+                
             </div>
         </ContactItemStyled>
     )
@@ -26,6 +27,11 @@ const ContactItemStyled = styled.div`
     align-items: center;
     &:not(:last-child){
         margin-bottom: 2.5rem;
+    }
+    &:hover{
+        border-top: 8px solid var(--primary-color);
+        transform: translateY(3px);
+        transition: 0.5s;
     }
     .left-content{
         padding: 1.5rem;
