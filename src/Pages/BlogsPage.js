@@ -15,7 +15,6 @@ function BlogsPage() {
                             return <div key={blog.id} className={'blog-item'}>
                                 
                                 <div className="title">
-                                    <a href={blog.link}>
                                         {blog.title}
                                         <div className="image">
                           
@@ -26,7 +25,7 @@ function BlogsPage() {
                                                  })}
 
                                         </div>
-                                    </a>
+                                    
                                 </div>
                             </div>
                         })
@@ -54,10 +53,13 @@ const BlogsStyled = styled.div`
             width: 100%;
             overflow: hidden;
             padding-bottom: .5rem;
+            
             img{
-                width: 25%;
-                height: 25%;
-                object-fit: cover;
+                width: 100px;
+                height: 100px;
+                object-fit: scale-down;
+                margin:5px;
+                float:left;
                 transition: all .4s ease-in-out;
                 &:hover{
                     cursor: pointer;
@@ -67,7 +69,6 @@ const BlogsStyled = styled.div`
         }
 
         .title{
-            a{
                 font-size: 1.8rem;
                 padding: 2rem 0;
                 color: var(--white-color);
@@ -76,7 +77,7 @@ const BlogsStyled = styled.div`
                 &:hover{
                     color: var(--primary-color);
                 }
-            }
+            
         }
     }
 `;
