@@ -18,13 +18,14 @@ function BlogsPage() {
                                     <a href={blog.link}>
                                         {blog.title}
                                         <div className="image">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"/>
+                          
+                                            {blog.image.map(img =>{ 
+                                                return (
+                                                <img src= {img} />
+                                                )
+                                                 })}
 
-                                </div>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -60,7 +61,7 @@ const BlogsStyled = styled.div`
                 transition: all .4s ease-in-out;
                 &:hover{
                     cursor: pointer;
-                    transform: rotate(10deg) scale(1.5);
+                    transform: rotate(10deg) scale(1.2);
                 }
             }
         }
