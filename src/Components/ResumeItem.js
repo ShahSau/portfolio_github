@@ -51,11 +51,11 @@ const ResumeItemStyled = styled.div`
         &::before{
             content: "";
             position: absolute;
-            left: 0;
+            left: 0px;
             top: 15px;
             height: 2px;
             width: 3rem;
-            background-color: var(--border-color);
+            background-color: #fff;
         }
         h5{
             color: var(--primary-color);
