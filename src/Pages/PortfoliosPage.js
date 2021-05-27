@@ -27,7 +27,7 @@ function PortfoliosPage() {
             <InnerLayout>
 
                 <Button filter={filter} button={button} />
-                <Menu menuItem={menuItem} />
+                <Menu menuItem={menuItem}/>
             </InnerLayout>
         </MainLayout>
     )

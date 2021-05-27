@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-// import PrimaryButton from '../Components/PrimaryButton';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
@@ -73,7 +72,7 @@ function ContactPage() {
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'+358452249949'}  />
                     <ContactItem title={'Email'} icon={email} cont1={'shahriarksaurov@gmail.com'}/>
-                    <ContactItem title={'Address'} icon={location} cont1={'Liusketie 2, Helsinki, 00710'} cont2={'Finland'} />
+                    <ContactItem title={'Address'} icon={location} cont1={'Pihlajamäki Helsinki, 00710'} cont2={'Finland'} />
                     
                 </div>
                 <Dialogs handleClickOpen={sendEmail} handleClose={handleClose} open={open}/>

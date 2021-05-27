@@ -5,25 +5,25 @@ import img3 from '../img/portImages/maya-3.jpg';
 const portfolios = [
     {
         id: 1,
-        category: 'Python',
+        category: 'Data Analysis',
         image: img1,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
         title: 'How To Use Python',
-        text: 'Numper one Programming language'
+        text: 'Numper one Programming language,Numper one Programming language, Numper one Programming language'
     },
     {
         id: 2,
-        category: 'Python',
+        category: 'Data Analysis',
         image: img3,
         link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
+        link2: '',
         title: 'How To Animate In Maya',
-        text: 'Number one Animation Application'
+        text: 'Numper one Programming language'
     },
     {
         id: 3,
-        category: 'Javascript',
+        category: 'FrontEnd',
         image: img3,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
@@ -32,7 +32,7 @@ const portfolios = [
     },
     {
         id: 4,
-        category: 'Animation',
+        category: 'Backend',
         image: img2,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
@@ -41,7 +41,7 @@ const portfolios = [
     },
     {
         id: 5,
-        category: 'Animation',
+        category: 'Fullstack',
         image: img2,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',

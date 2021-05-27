@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub';
-import Pinterest from '@material-ui/icons/Pinterest';
+import LanguageIcon from '@material-ui/icons/Language';
+
 
 function Menu({menuItem}) {
     return (
@@ -18,11 +19,13 @@ function Menu({menuItem}) {
                                             <GitHub />
                                         </a>
                                     </li>
+                                    {item.link2 !== '' && (
                                     <li>
                                         <a href={item.link2}>
-                                            <Pinterest />
+                                            <LanguageIcon />
                                         </a>
                                     </li>
+                                    )}
                                 </ul>
                             </div>
                             <h6>{item.title}</h6>

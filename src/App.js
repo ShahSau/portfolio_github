@@ -9,6 +9,7 @@ import ResumePage from './Pages/ResumePage';
 import PortfoliosPage from './Pages/PortfoliosPage';
 import ContactPage from './Pages/ContactPage';
 import SkillsPage from './Pages/SkillsPage'
+import PageNotFound from './Pages/PageNotFound'
 import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Route, useLocation, Switch as Switching } from "react-router";
@@ -92,6 +93,9 @@ function App() {
             </Route>
             <Route path="/contact" exact>
               <ContactPage />
+            </Route>
+            <Route>
+              <PageNotFound />
             </Route>
             
           </Switching>
