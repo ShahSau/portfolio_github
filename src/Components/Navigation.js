@@ -26,14 +26,11 @@ function Navigation() {
                     <NavLink to="/skills" activeClassName="active-class" exact>Skills</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/blogs" activeClassName="active-class" exact>Blogs</NavLink>
-                </li>
-                <li className="nav-item">
                     <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
                 </li>
             </ul>
             <footer className="footer">
-                <p>@2021 <b>Lorem Ipsum</b></p>
+                <p>@2021 <b>Shahriar</b></p>
             </footer>
         </NavigationStyled>
     )

@@ -1,11 +1,11 @@
 
 
-const blogs = [
+const skills = [
     {
         id: 0,
         title: 'Languages',
         image:[ "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/180px-ISO_C%2B%2B_Logo.svg.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/180px-C_Sharp_wordmark.svg.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/124px-R_logo.svg.png"
@@ -43,11 +43,6 @@ const blogs = [
                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Plotly-logo-01-square.png/330px-Plotly-logo-01-square.png",
                "https://miro.medium.com/max/4966/1*gM_WIfx7MXOO7jzsPm-Y0Q.png",
                "https://tidyverse.tidyverse.org/articles/tidyverse-logo.png",
-               
-
-
-
-
 
             ]
     },
@@ -62,19 +57,21 @@ const blogs = [
     {
         id: 5,
         title: 'Database',
-        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"
+        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/200px-Postgresql_elephant.svg.png",
+               "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
+               "https://cdn.ourcodeworld.com/public-media/articles/articleocw-5d78ebb022d1e.webp",
             ]
     },
     {
         id: 6,
-        title: 'Cloud, Devops & Others',
-        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"
+        title: 'Others',
+        image:["https://1000logos.net/wp-content/uploads/2017/08/Docker-logo-500x318.jpg",
+               "https://sybyl.com/wp-content/uploads/2019/11/Tableau-Logo-for-website-300x300.jpg",
+               "https://cdn.icon-icons.com/icons2/2699/PNG/512/heroku_logo_icon_169035.png",
+               "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png",
+
             ]
     }
 ]
 
-export default blogs;
+export default skills;

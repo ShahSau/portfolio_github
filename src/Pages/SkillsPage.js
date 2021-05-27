@@ -1,102 +1,85 @@
-import { useState } from "react";
-import Slider from "react-slick";
+import React from 'react';
 import styled from 'styled-components';
-import astronaut from "../img/skills/astronaut.png";
-import celebrating from "../img/skills/celebrating.png";
-import education from "../img/skills/education.png";
-import taken from "../img/skills/taken.png";
-import {MainLayout, InnerLayout} from '../styles/Layouts';
 import Title from '../Components/Title';
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-
-const images = [astronaut, celebrating, education, taken];
+import skills from '../data/skills';
+import {MainLayout, InnerLayout} from '../styles/Layouts';
 
 function SkillPage() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      };
-      return (
-        <div>
-          <h2> Single Item</h2>
-          <Slider {...settings}>
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
-        </div>
-      );
+  return (
+    <MainLayout>
+        <SkillsStyled>
+        <Title title={'Skills'} span={'Skills'} />
+            <InnerLayout className={'skill'}>
+                {
+                    skills.map((skill)=>{
+                        return <div key={skill.id} className={'skill-item'}>
+                            
+                            <div className="title">
+                                    {skill.title}
+                                    <div className="image">
+                      
+                                        {skill.image.map(img =>{ 
+                                            return (
+                                            <img src= {img} />
+                                            )
+                                             })}
+
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    })
+                }
+            </InnerLayout>
+        </SkillsStyled>
+    </MainLayout>
+)
 }
+const SkillsStyled = styled.div`
+    .skill{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 3rem;
+        @media screen and (max-width: 770px){
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .skill-item{
+            background-color: var(--background-dark-grey);
+            padding: 1rem 1rem;
+        }
+        .image{
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: .5rem;
+            
+            img{
+                width: 100px;
+                height: 100px;
+                object-fit: scale-down;
+                margin:5px;
+                float:left;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    cursor: pointer;
+                    transform: rotate(10deg) scale(1.2);
+                }
+            }
+        }
 
-const SkillStyled = styled.section`
-import "~slick-carousel/slick/slick.css";
-import "~slick-carousel/slick/slick-theme.css";
-    .skl{
-    width: 30%;
-    margin: 10rem 10rem;
-    height: 100%;
-    // background-color: transparent !important;
+        .title{
+                font-size: 1.8rem;
+                padding: 2rem 0;
+                color: var(--white-color);
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    color: var(--primary-color);
+                    transition: all .5s ease-in-out;
+                }
+            
+        }
     }
-    .slide img {
-        width: 20rem;
-        margin: 0 auto;
-        position: center;
-      }
-      
-      .slide {
-        transform: scale(0.2);
-        transition: transform 300ms;
-        opacity: 0.5;
-      }
-      
-      .activeSlide {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-      
-      .arrow {
-        position: absolute;
-        cursor: pointer;
-        z-index: 10;
-      }
-      
-      .arrow svg {
-        transition: color 300ms;
-      }
-      
-      .arrow svg:hover {
-        color: #68edff;
-      }
-      
-      .next {
-        right: 10%;
-        top: 50%;
-      }
-      
-      .prev {
-        left: 10%;
-        top: 50%;
-      }
-
-    
 `;
 
 export default SkillPage

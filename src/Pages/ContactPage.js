@@ -59,7 +59,7 @@ function ContactPage() {
                         </div>
                         <div className="form-field">
                             <label htmlFor="text-area">Enter your Message*</label>
-                            <textarea name="textarea" id="textarea" cols="30" rows="10" name="message"></textarea>
+                            <textarea id="textarea" cols="30" rows="10" name="message"></textarea>
                         </div>
                         <div className="form-field f-button">
                            
