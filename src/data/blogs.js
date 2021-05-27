@@ -19,9 +19,12 @@ const blogs = [
     {
         id: 2,
         title: 'Backtend Technologies',
-        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"
+        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/330px-Node.js_logo.svg.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/330px-Expressjs.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/330px-Flask_logo.svg.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/338px-GraphQL_Logo.svg.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/278px-Django_logo.svg.png",
+                "https://i0.wp.com/restfulapi.net/wp-content/uploads/rest.png?w=300&ssl=1"
             ]
     },
     {
@@ -34,7 +37,7 @@ const blogs = [
     },
     {
         id: 4,
-        title: 'Image Processing',
+        title: 'Machine learning',
         image:["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png"

@@ -76,6 +76,7 @@ const BlogsStyled = styled.div`
                 transition: all .4s ease-in-out;
                 &:hover{
                     color: var(--primary-color);
+                    transition: all .2s ease-in-out;
                 }
             
         }
