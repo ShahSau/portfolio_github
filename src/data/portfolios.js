@@ -10,6 +10,7 @@ const portfolios = [
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
         title: 'How To Use Python',
+        technologies:["React", "Next", "Flask"],
         text: 'Numper one Programming language,Numper one Programming language, Numper one Programming language'
     },
     {
@@ -19,6 +20,7 @@ const portfolios = [
         link1: 'https://www.google.com',
         link2: '',
         title: 'How To Animate In Maya',
+        technologies:["React", "Next", "Flask"],
         text: 'Numper one Programming language'
     },
     {
@@ -28,6 +30,7 @@ const portfolios = [
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
         title: 'How To Animate In Maya',
+        technologies:["React", "Next", "Flask"],
         text: 'Number one Animation Application'
     },
     {
@@ -37,6 +40,7 @@ const portfolios = [
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
         title: 'How To Use Blender',
+        technologies:["React", "Next", "Flask"],
         text: 'Free Animation Software'
     },
     {
@@ -46,6 +50,7 @@ const portfolios = [
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
         title: 'How To Use Blender',
+        technologies:["React", "Next", "Flask"],
         text: 'Free Animation Software'
     }
 ]

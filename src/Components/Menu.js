@@ -27,9 +27,14 @@ function Menu({menuItem}) {
                                     </li>
                                     )}
                                 </ul>
-                            </div>
+                                </div>
+                                
+                            
                             <h6>{item.title}</h6>
                             <p>{item.text}</p>
+                            <p>{item.technologies.map((item)=>{
+                                    return <p>{item}</p>
+                                })}</p>
                         </div>
                     </div>
                 })
