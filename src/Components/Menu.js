@@ -27,14 +27,14 @@ function Menu({menuItem}) {
                                     </li>
                                     )}
                                 </ul>
-                                </div>
+                            </div>
                                 
                             
                             <h6>{item.title}</h6>
                             <p>{item.text}</p>
-                            <p>{item.technologies.map((item)=>{
-                                    return <p>{item}</p>
-                                })}</p>
+                            <div className='inline'>Technologies: &nbsp;{item.technologies.map((item)=>{
+                                    return <p>{item}&nbsp;</p>
+                                })}</div>
                         </div>
                     </div>
                 })
@@ -52,6 +52,10 @@ const MenuItemStyled = styled.div`
     }
     @media screen and (max-width:670px){
         grid-template-columns: repeat(1, 1fr);
+    }
+    .inline{
+        display:flex;
+       
     }
     .grid-item{
         .portfolio-content{
@@ -99,7 +103,7 @@ const MenuItemStyled = styled.div`
             .portfolio-image{
                 &::before{
                     content: "";
-                    position: absolute;
+                    position: relative;
                     left: 2%;
                     top: 4%;
                     height: 0;
@@ -114,7 +118,7 @@ const MenuItemStyled = styled.div`
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    transition: all .4s ease-in-out;
+                    transition: all .5s ease-in-out;
                     opacity: 1;
                     li{
                         transition: all .4s ease-in-out;
@@ -139,7 +143,7 @@ const MenuItemStyled = styled.div`
                     }
                 }
                 &::before{
-                    height: calc(100% - 32%) ;
+                    height: calc(100% - 55%) ;
                     width: calc(100% - 4%);
                     background-color: white;
                     opacity: 0.9;
