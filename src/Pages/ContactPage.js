@@ -8,7 +8,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ContactItem from '../Components/ContactItem';
 import emailjs from 'emailjs-com';
 import Dialogs from '../Components/Dialogs'
-
+import {motion} from "framer-motion";
 
 function ContactPage() {
     const phone = <PhoneIcon />
@@ -39,6 +39,12 @@ function ContactPage() {
             <Title title={'Contact'} span={'Contact'} />
             <ContactPageStyled >
             <InnerLayout className={'contact-section'}>
+            <motion.div
+                initial={{opacity: 0,y:250}}
+                animate={{opacity: 1,y:1}}
+                exit={{opacity: 1,y:0}}
+                transition={{ duration: 2}}
+            >
                 <div className="left-content">
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
@@ -69,12 +75,21 @@ function ContactPage() {
                     
 
                 </div>
+                </motion.div>
+                <motion.div
+                initial={{opacity: 0,y:250}}
+                animate={{opacity: 1,y:1}}
+                exit={{opacity: 1,y:0}}
+                transition={{ delay:2,duration: 3}}
+            >
+                
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'+358452249949'}  />
                     <ContactItem title={'Email'} icon={email} cont1={'shahriarksaurov@gmail.com'}/>
                     <ContactItem title={'Address'} icon={location} cont1={'Pihlajamäki Helsinki, 00710'} cont2={'Finland'} />
                     
                 </div>
+                </motion.div>
                 <Dialogs handleClickOpen={sendEmail} handleClose={handleClose} open={open}/>
             </InnerLayout>
             </ContactPageStyled>

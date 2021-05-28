@@ -28,9 +28,11 @@ function HomePage() {
                     loop={Infinity}
                     wrapper="p"
                     steps={[
-                        'I am a software developer 💻',
+                        'I am a software developer',
                         2000,
-                        'I am a designer ',
+                        'I am a web programmer',
+                        2000,
+                        'I am a data enthusiast',
                         2000,
                         'I am a nano-physics graduate',
                         2000

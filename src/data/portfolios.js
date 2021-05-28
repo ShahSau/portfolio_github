@@ -18,8 +18,8 @@ const portfolios = [
         id: 0,
         category: 'Fullstack',
         image: img0,
-        link1: 'https://calm-thicket-11450.herokuapp.com/',
-        link2: 'https://github.com/ShahSau/part3_HU',
+        link1: 'https://github.com/ShahSau/part3_HU',
+        link2: 'https://calm-thicket-11450.herokuapp.com/',
         title: 'CURD application',
         technologies:["React,", "Express,", "Node,", "MongoDB,", "Heroku,","REST API."],
         text: 'Phonebook app where user add, remove or update data.'

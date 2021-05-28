@@ -3,17 +3,25 @@ import styled from 'styled-components';
 import Title from '../Components/Title';
 import skills from '../data/skills';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
+import {motion} from "framer-motion";
 
 function SkillPage() {
   return (
     <MainLayout>
         <SkillsStyled>
+        <motion.div
+        initial={{opacity: 0,y:250}}
+        animate={{opacity: 1,y:1}}
+        exit={{opacity: 1,y:0}}
+        transition={{ duration: 2.5}}
+    >
         <Title title={'Skills'} span={'Skills'} />
             <InnerLayout className={'skill'}>
                 {
                     skills.map((skill)=>{
+                        
                         return <div key={skill.id} className={'skill-item'}>
-                            
+                           
                             <div className="title">
                                     {skill.title}
                                     <div className="image">
@@ -27,10 +35,13 @@ function SkillPage() {
                                     </div>
                                 
                             </div>
+                            
                         </div>
+                    
                     })
                 }
             </InnerLayout>
+            </motion.div>
         </SkillsStyled>
     </MainLayout>
 )
