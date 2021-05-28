@@ -20,7 +20,7 @@ function SkillPage() {
                       
                                         {skill.image.map(img =>{ 
                                             return (
-                                            <img src= {img} />
+                                            <img src= {img} alt={skill.id}/>
                                             )
                                              })}
 

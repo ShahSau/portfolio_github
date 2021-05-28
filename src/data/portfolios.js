@@ -1,8 +1,10 @@
 import img0 from '../img/portImages/0.png'
 import img1 from '../img/portImages/1.png'
+import img2 from '../img/portImages/2.png'
 import img3 from '../img/portImages/3.png'
 import img4 from '../img/portImages/4.png'
 import img5 from '../img/portImages/5.png'
+import img6 from '../img/portImages/6.png'
 import img7 from '../img/portImages/7.png'
 import img8 from '../img/portImages/8.png'
 import img9 from '../img/portImages/9.png'
@@ -35,12 +37,12 @@ const portfolios = [
     {
         id: 2,
         category: 'FrontEnd',
-        image: img1,
-        link1: '',
-        link2: '',
-        title: '',
-        technologies:[""],
-        text: ''
+        image: img2,
+        link1: 'https://github.com/ShahSau/React/tree/main/Recipe%20App/recipe-app',
+        link2: 'https://6097058f5a99220b5a6b58c4--naughty-wescoff-9ad9ba.netlify.app/',
+        title: 'Recipe App',
+        technologies:["React,", "React Route,", "Bootstrap,", "REST API."],
+        text: 'This website was build using recipe API from Edamam .'
     },
     {
         id: 3,
@@ -75,12 +77,12 @@ const portfolios = [
     {
         id: 6,
         category: 'FrontEnd',
-        image: img1,
-        link1: '',
-        link2: '',
-        title: '',
-        technologies:[""],
-        text: ''
+        image: img6,
+        link1: 'https://github.com/ShahSau/React/tree/main/Pokemon%20',
+        link2: 'https://6091a5202c719311ad1175be--epic-leakey-1c63a6.netlify.app/',
+        title: 'Pokemon',
+        technologies:["React,", "Bootstrap,", "REST API."],
+        text: 'Data fetched from pokemon API and displayed using react.'
     },
     {
         id: 7,

@@ -11,12 +11,9 @@ function ImageSection() {
             <div className="right-content">
                 <h4>Hi, there <span>👋 </span></h4>
                 <p className="paragraph">
-                Shahriar is a multitalented Data Analyst & AI Software Developer. He is highly proficient in
-Data Analysis with Python and R as well as Full Stack Development with MERN Stack. Having
-earned a Master of Science, Shahriar has led a postgraduate research team at the University
-of Helsinki for over a year. Shahriar is a great team player who loves teamwork and dedicates
-himself fully to solving the problem at hand. He is eager to continue expanding and perfecting
-his knowledge while making a valuable contribution to cross-functional development teams.
+                I am a multitalented Software Developer, highly proficient in Data Analysis with Python and R as well as Full Stack Development with MERN Stack.  I am a great team player who loves teamwork and dedicates
+                myself fully to solving the problem at hand. I am eager to continue expanding and perfecting
+                my knowledge while making a valuable contribution to cross-functional development teams.
                     
                 </p>
                 {/* <div className="about-info">
@@ -37,7 +34,7 @@ his knowledge while making a valuable contribution to cross-functional developme
                         <p>: Freelance</p>
                     </div>
                 </div> */}
-                <PrimaryButton title={'Download Cv'} />
+                <PrimaryButton title={'My work'}/>
             </div>
         </ImageSectionStyled>
     )

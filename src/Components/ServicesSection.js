@@ -28,7 +28,7 @@ function ServicesSection() {
                     <ServiceCard 
                         image={design} 
                         title={'Web Development'} 
-                        paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                        paragraph={'Web development gives me the opportunity to express myself creatively on the internet. And I love to see my imagination come to life.'}
                     />
                      </motion.div>
                     <div className="mid-card"> </div>
@@ -41,7 +41,7 @@ function ServicesSection() {
                     <ServiceCard 
                         image={intelligence} 
                         title={'Image processing'} 
-                        paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                        paragraph={'The human visual system does not perceive the world in the same manner as digital detectors and I love to create link between them.'}
                     />    
                     </motion.div>  
                     <div className="mid-card"> </div>
@@ -55,7 +55,7 @@ function ServicesSection() {
                     <ServiceCard 
                             image={design} 
                             title={'Data analysis'} 
-                            paragraph={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod.'}
+                            paragraph={'I love making sense of unorganized, messy data and visualized my findings.'}
                         />
                         </motion.div> 
                      </div> 
