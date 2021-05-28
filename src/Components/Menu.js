@@ -44,7 +44,7 @@ function Menu({menuItem}) {
 }
 
 const MenuItemStyled = styled.div`
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     @media screen and (max-width:920px){
