@@ -26,9 +26,9 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: #007bff;
     --primary-color-light: #3369e7;
     --secondary-color: #ff7675;
-    --background-dark-color: #92D4E8;
-    --background-dark-grey: #F1F1F1;
-    --border-color: #cbced8;
+    --background-dark-color: #91D0D7;
+    --background-dark-grey: #DBE9F4;
+    --border-color: #473857;
     --background-light-color: #C3BEF3;
     --background-light-color-2: rgba(3,127,255,.3);
     
