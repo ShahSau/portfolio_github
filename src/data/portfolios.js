@@ -2,6 +2,7 @@ import img0 from '../img/portImages/0.png'
 import img1 from '../img/portImages/1.png'
 import img4 from '../img/portImages/4.png'
 import img5 from '../img/portImages/5.png'
+import img7 from '../img/portImages/7.png'
 import img8 from '../img/portImages/8.png'
 
 
@@ -31,7 +32,7 @@ const portfolios = [
     {
         id: 2,
         category: 'FrontEnd',
-        image: img3,
+        image: img1,
         link1: '',
         link2: '',
         title: '',
@@ -41,7 +42,7 @@ const portfolios = [
     {
         id: 3,
         category: 'Backend',
-        image: img2,
+        image: img1,
         link1: '',
         link2: '',
         title: '',
@@ -71,7 +72,7 @@ const portfolios = [
     {
         id: 6,
         category: 'FrontEnd',
-        image: img3,
+        image: img1,
         link1: '',
         link2: '',
         title: '',
@@ -80,13 +81,13 @@ const portfolios = [
     },
     {
         id: 7,
-        category: 'Backend',
-        image: img2,
-        link1: '',
-        link2: '',
-        title: '',
-        technologies:[""],
-        text: ''
+        category: 'Others',
+        image: img7,
+        link1: 'https://github.com/ShahSau/JavaScript/tree/main/Killing%20Spider',
+        link2: 'https://compassionate-joliot-a4dcf7.netlify.app/',
+        title: 'Killing Spider',
+        technologies:["Javascript,","HTML5,","CSS3."],
+        text: 'A small RPG (Role Playing Game) using core Javascript, HTML5 and CSS3.'
     },
     {
         id: 8,
@@ -97,6 +98,16 @@ const portfolios = [
         title: 'Flight Delays and Cancellations',
         technologies:["pandas,", "plotly,", "seaborn,", "dask."],
         text: 'Explored the flights in different airports in USA in 2015'
+    },
+    {
+        id: 11,
+        category: 'Others',
+        image: img8,
+        link1: 'https://github.com/ShahSau/JavaScript/tree/main/Killing%20Spider',
+        link2: 'https://compassionate-joliot-a4dcf7.netlify.app/',
+        title: 'Killing Spider',
+        technologies:["Javascript,","HTML5,","CSS3."],
+        text: 'A small RPG (Role Playing Game) using core Javascript, HTML5 and CSS3.'
     },
 
 ]
