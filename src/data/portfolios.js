@@ -1,58 +1,104 @@
-import img1 from '../img/portImages/maya-1.jpg';
-import img2 from '../img/portImages/maya-4.jpg';
-import img3 from '../img/portImages/maya-3.jpg';
+import img0 from '../img/portImages/0.png'
+import img1 from '../img/portImages/1.png'
+import img4 from '../img/portImages/4.png'
+import img5 from '../img/portImages/5.png'
+import img8 from '../img/portImages/8.png'
+
+
+
 
 const portfolios = [
+    {
+        id: 0,
+        category: 'Fullstack',
+        image: img0,
+        link1: 'https://calm-thicket-11450.herokuapp.com/',
+        link2: 'https://github.com/ShahSau/part3_HU',
+        title: 'CURD application',
+        technologies:["React,", "Express,", "Node,", "MongoDB,", "Heroku,","REST API."],
+        text: 'Phonebook app where user add, remove or update data.'
+    },
     {
         id: 1,
         category: 'Data Analysis',
         image: img1,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Use Python',
-        technologies:["React,", "Next,", "Flask."],
-        text: 'Numper one Programming language,Numper one Programming language, Numper one Programming language'
+        link1: 'https://github.com/ShahSau/Python_Data_Science/tree/master/COVID-19%20Analysis',
+        link2: '',
+        title: 'COVID-19 Analysis',
+        technologies:["Pandas,", "Plotly,", "Folium,", "Numpy."],
+        text: 'Analyzed Covid-19 Pandemic dataset from Johns Hopkins University and Terveyden ja hyvinvoinnin laitos(THL).'
     },
     {
         id: 2,
-        category: 'Data Analysis',
+        category: 'FrontEnd',
         image: img3,
-        link1: 'https://www.google.com',
+        link1: '',
         link2: '',
-        title: 'How To Animate In Maya',
-        technologies:["React,", "Next,", "Flask."],
-        text: 'Numper one Programming language'
+        title: '',
+        technologies:[""],
+        text: ''
     },
     {
         id: 3,
-        category: 'FrontEnd',
-        image: img3,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Animate In Maya',
-        technologies:["React,", "Next,", "Flask."],
-        text: 'Number one Animation Application'
+        category: 'Backend',
+        image: img2,
+        link1: '',
+        link2: '',
+        title: '',
+        technologies:[""],
+        text: ''
     },
     {
         id: 4,
-        category: 'Backend',
-        image: img2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Use Blender',
-        technologies:["React,", "Next,", "Flask."],
-        text: 'Free Animation Software'
+        category: 'Data Analysis',
+        image: img4,
+        link1: 'https://github.com/ShahSau/R_Data_Science/blob/master/DataCamp-R/%20RISE%20AND%20FALL%20OF%20PROGRAMMING%20LANGUAGES/Rise%20and%20Fall%20of%20Programming%20Languages%202/notebook.ipynb',
+        link2: '',
+        title: 'Trend in Programming Languages',
+        technologies:["readr,", "dplyr,", "tidyverse,", "ggplot2."],
+        text: 'Analyzing the trend in programming language from year 2008 to 2018 using data obtained from Stack Overflow.'
     },
     {
         id: 5,
         category: 'Fullstack',
+        image: img5,
+        link1: 'https://github.com/ShahSau/Flask/tree/main/Weather%20app/weatherApp',
+        link2: '',
+        title: 'Weather App (Flask)',
+        technologies:["flask,", "flask sqlalchemy,", "HTML5,", "CSS3,", "Docker,", "REST API."],
+        text: 'A simple weather app, that takes input from users and display the current weather in the city of the user\'s choice.'
+    },
+    {
+        id: 6,
+        category: 'FrontEnd',
+        image: img3,
+        link1: '',
+        link2: '',
+        title: '',
+        technologies:[""],
+        text: ''
+    },
+    {
+        id: 7,
+        category: 'Backend',
         image: img2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Use Blender',
-        technologies:["React,", "Next,", "Flask."],
-        text: 'Free Animation Software'
-    }
+        link1: '',
+        link2: '',
+        title: '',
+        technologies:[""],
+        text: ''
+    },
+    {
+        id: 8,
+        category: 'Data Analysis',
+        image: img8,
+        link1: 'https://github.com/ShahSau/Python_Data_Science/tree/master/Flight%20Delays%20and%20Cancellations',
+        link2: '',
+        title: 'Flight Delays and Cancellations',
+        technologies:["pandas,", "plotly,", "seaborn,", "dask."],
+        text: 'Explored the flights in different airports in USA in 2015'
+    },
+
 ]
 
 export default portfolios;

@@ -15,13 +15,13 @@ function Menu({menuItem}) {
                                 <img src={item.image} alt=""/>
                                 <ul>
                                     <li>
-                                        <a href={item.link1}>
+                                        <a href={item.link1} target='_blank'>
                                             <GitHub />
                                         </a>
                                     </li>
                                     {item.link2 !== '' && (
                                     <li>
-                                        <a href={item.link2}>
+                                        <a href={item.link2} target='_blank'>
                                             <LanguageIcon />
                                         </a>
                                     </li>
@@ -55,6 +55,8 @@ const MenuItemStyled = styled.div`
     }
     .inline{
         display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
        
     }
     .grid-item{
@@ -145,7 +147,7 @@ const MenuItemStyled = styled.div`
                 &::before{
                     height: calc(100% - 55%) ;
                     width: calc(100% - 4%);
-                    background-color: white;
+                    background-color: transparent;
                     opacity: 0.9;
                     transform-origin: left;
                     
