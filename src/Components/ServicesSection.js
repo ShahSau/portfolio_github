@@ -55,7 +55,7 @@ function ServicesSection() {
                     <ServiceCard 
                             image={design} 
                             title={'Data analysis'} 
-                            paragraph={'I love making sense of unorganized, messy data and visualized my findings.'}
+                            paragraph={'I love making sense of unorganized, messy data and visualizing my findings.'}
                         />
                         </motion.div> 
                      </div> 
