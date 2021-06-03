@@ -8,6 +8,7 @@ import img6 from '../img/portImages/6.png'
 import img7 from '../img/portImages/7.png'
 import img8 from '../img/portImages/8.png'
 import img9 from '../img/portImages/9.png'
+import img11 from '../img/portImages/11.png'
 import img12 from '../img/portImages/12.png'
 
 
@@ -114,7 +115,16 @@ const portfolios = [
         technologies:["Javascript,", "Express,", "Node,", "Mongodb,","Passport.js."],
         text: 'Its a login page with authentication'
     },
-    
+    {
+        id: 11,
+        category: 'FrontEnd',
+        image: img11,
+        link1: 'https://github.com/ShahSau/React/tree/main/Movie_search_app',
+        link2: 'https://60b93d8a3881493ba0b1d7d3--optimistic-mahavira-c867c5.netlify.app/',
+        title: 'Entertainment Vibe',
+        technologies:["React,", "React-DOM,", "material ui,", "REST API."],
+        text: 'This is an movie search app using data from The Movie Database.'
+    },
     {
         id: 12,
         category: 'Data Analysis',
