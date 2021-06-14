@@ -1,37 +1,40 @@
 
-
+import p  from "../img/skills/python.jpeg"
 const skills = [
     {
         id: 0,
         title: 'Languages',
-        image:[ "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/180px-ISO_C%2B%2B_Logo.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/C_Sharp_wordmark.svg/180px-C_Sharp_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/124px-R_logo.svg.png"
+        image:[ "https://i.ibb.co/L06xB8w/file-type-js-official-icon-130509.png",
+                "https://i0.wp.com/evomics.org/wp-content/uploads/2011/09/python-logo-glassy.png",
+                "https://i.ibb.co/NSLB9nZ/c.png",
+                "https://i.ibb.co/gwphSCd/csharp-original-logo-icon-146578.png",
+                "https://i.ibb.co/RP4PGDt/file-type-r-icon-130212.png",
+                
+                
             ]
     },
     {
         id: 1,
         title: 'Froentend Technologies',
-        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/180px-HTML5_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/180px-CSS3_logo_and_wordmark.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/330px-React-icon.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/250px-Typescript_logo_2020.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/330px-Bootstrap_logo.svg.png",
+        image:["https://i.ibb.co/4YCXwf6/file-type-html-icon-130541.png",
+                "https://i.ibb.co/8dyJw6n/file-type-css-icon-130661.png",
+                "https://i.ibb.co/02Pnk3p/react-original-wordmark-logo-icon-146375.png",
+                "https://i.ibb.co/6DnrchH/file-type-typescript-official-icon-130107.png",
+                "https://i.ibb.co/XyhFHHR/file-type-vue-icon-130078.png",
+                "https://i.ibb.co/fQbMmqY/bootstrap-plain-wordmark-logo-icon-146620.png",
                 "https://material-ui.com/static/logo_raw.svg",
             ]
     },
     {
         id: 2,
-        title: 'Backtend Technologies',
-        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/330px-Node.js_logo.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Expressjs.png/330px-Expressjs.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/330px-Flask_logo.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/338px-GraphQL_Logo.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Django_logo.svg/278px-Django_logo.svg.png",
-                "https://i0.wp.com/restfulapi.net/wp-content/uploads/rest.png?w=300&ssl=1"
+        title: 'Backend Technologies',
+        image:["https://i.ibb.co/7bkqdYs/nodejs-plain-wordmark-logo-icon-146410.png",
+                
+                "https://i.ibb.co/yqRqNS8/kisspng-node-js-express-js-javascript-solution-stack-web-a-5b22b9d57436d2-563861541529002453476-remo.png",
+                "https://i.ibb.co/TmsK68x/flask.png",
+                "https://i.ibb.co/68fCgL2/file-type-graphql-icon-130564.png",
+                "https://i.ibb.co/c2987nZ/django-plain-logo-icon-146558.png",
+                "https://i.ibb.co/8rNQNtb/rest.png"
             ]
     },
     {

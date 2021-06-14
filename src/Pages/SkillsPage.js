@@ -29,6 +29,7 @@ function SkillPage() {
                                         {skill.image.map(img =>{ 
                                             return (
                                             <img src= {img} alt={skill.id}/>
+                                        
                                             )
                                              })}
 
@@ -52,28 +53,43 @@ const SkillsStyled = styled.div`
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 3rem;
+        
         @media screen and (max-width: 770px){
             grid-template-columns: repeat(1, 1fr);
         }
         .skill-item{
-            background-color: var(--background-dark-grey);
+            background: var(--background-dark-grey);
             padding: 1rem 1rem;
+            cursor: pointer;
+            &:hover{
+                transform: rotate(0deg) scale(1.07);
+                transition: all .2s ease-in-out;
+                background: linear-gradient(#708090, #696969);
+                .title{
+                    color: #171717;
+                    transition: all .2s ease-in-out;
+                }
+                
+            }
         }
         .image{
             width: 100%;
             overflow: hidden;
-            padding-bottom: .5rem;
+            padding: 0.5rem 0;
+            display:flex;
+            flex-wrap: wrap;
+            text-align:center;
             
             img{
-                width: 100px;
-                height: 100px;
+                width: 15%;
+                
                 object-fit: scale-down;
                 margin:5px;
                 float:left;
                 transition: all .4s ease-in-out;
                 &:hover{
                     cursor: pointer;
-                    transform: rotate(10deg) scale(1.2);
+                    transform: rotate(0deg) scale(1.2);
                 }
             }
         }
@@ -84,10 +100,7 @@ const SkillsStyled = styled.div`
                 color: var(--white-color);
                 cursor: pointer;
                 transition: all .4s ease-in-out;
-                &:hover{
-                    color: var(--primary-color);
-                    transition: all .5s ease-in-out;
-                }
+                
             
         }
     }
