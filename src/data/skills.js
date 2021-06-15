@@ -40,41 +40,47 @@ const skills = [
     {
         id: 3,
         title: 'Data Analysis',
-        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/NumPy_logo_2020.svg/330px-NumPy_logo_2020.svg.png",
-               "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/450px-Pandas_logo.svg.png",
-               "https://static.bokeh.org/logos/logotype.svg",
-               "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Plotly-logo-01-square.png/330px-Plotly-logo-01-square.png",
-               "https://miro.medium.com/max/4966/1*gM_WIfx7MXOO7jzsPm-Y0Q.png",
-               "https://tidyverse.tidyverse.org/articles/tidyverse-logo.png",
+        image:[
+            
+                "https://user-images.githubusercontent.com/1217238/65354639-dd928f80-dba4-11e9-833b-bc3e8c6a737d.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/450px-Pandas_logo.svg.png",
+                "https://static.bokeh.org/logos/logotype.svg",
+                "https://images.prismic.io/plotly-marketing-website/bd1f702a-b623-48ab-a459-3ee92a7499b4_logo-plotly.svg",
+                "https://seaborn.pydata.org/_static/logo-wide-lightbg.svg",
+                "https://tidyverse.tidyverse.org/articles/tidyverse-logo.png",
 
             ]
     },
     {
         id: 4,
         title: 'Machine learning',
-        image:["https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/330px-Scikit_learn_logo_small.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/270px-OpenCV_Logo_with_text_svg_version.svg.png",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/375px-Apache_Spark_logo.svg.png"
+        image:[
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/260px-Scikit_learn_logo_big.svg.png",
+                 "https://opencv.org/wp-content/uploads/2020/07/cropped-OpenCV_logo_white_600x.png",
+                 "https://spark.apache.org/images/spark-logo-trademark.png"
             ]
     },
     {
         id: 5,
         title: 'Database',
         image:["https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/200px-Postgresql_elephant.svg.png",
-               "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
-               "https://cdn.ourcodeworld.com/public-media/articles/articleocw-5d78ebb022d1e.webp",
+                "https://docs.mongodb.com/images/mongodb-logo.png",
+                "https://i.ibb.co/KygzfYg/no-SQL-removebg-preview.png"
+                
             ]
     },
     {
         id: 6,
         title: 'Others',
-        image:["https://1000logos.net/wp-content/uploads/2017/08/Docker-logo-500x318.jpg",
-               "https://sybyl.com/wp-content/uploads/2019/11/Tableau-Logo-for-website-300x300.jpg",
-               "https://cdn.icon-icons.com/icons2/2699/PNG/512/heroku_logo_icon_169035.png",
-               "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png",
-
+        image:[
+                
+                "https://i.ibb.co/KWL8Y3V/Tableau-Logo.png",
+                "https://i.ibb.co/KxLqPrz/heroku-logo-1.png",
+                "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png",
+                "https://i.ibb.co/L58nwV1/docker.png",
+                
             ]
     }
 ]
-
+// images are saved in imagebb.com
 export default skills;

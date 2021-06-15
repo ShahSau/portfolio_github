@@ -1,15 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
 
-function ResumeItem({year, title, subTitle, text}) {
+function ResumeItem({ year, title, subTitle, text}) {
     return (
         <ResumeItemStyled>
-            <div className="left-content">
+            {/* <div className="left-content">
                 <p>{year}</p>
-            </div>
+            </div> */}
             <div className="right-content">
                 <h5>{title}</h5>
-                <h6>{subTitle}</h6>
+                <h6>{subTitle}, {year}</h6>
                 <p>{text}</p>
             </div>
         </ResumeItemStyled>
@@ -43,28 +43,43 @@ const ResumeItemStyled = styled.div`
         }
         p{
             display: inline-block;
+            font-weight:lighter;
         }
     }
     .right-content{
         padding-left: 5rem;
         position: relative;
+        // &::before{
+        //     content: "";
+        //     position: absolute;
+        //     left: 0px;
+        //     top: 15px;
+        //     height: 2px;
+        //     width: 3rem;
+        //     background-color: #fff;
+        // }
         &::before{
             content: "";
             position: absolute;
-            left: 0px;
-            top: 15px;
-            height: 2px;
-            width: 3rem;
-            background-color: #fff;
+            left: -10px;
+            top: 5px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border: 2px solid var(--border-color);
+            background-color: var(--background-dark-color);
         }
         h5{
-            color: var(--primary-color);
-            font-size: 2rem;
-            padding-bottom: .4rem;
+            color: var(primary-color-light);
+            font-size: 1.8rem;
+            padding-bottom: 0.9rem;
+            font-weight:lighter;
         }
         h6{
-            padding-bottom: .6rem;
-            font-size: 1.5rem;
+            padding-bottom: 1rem;
+            font-size: 1.25rem;
+            color: var(--secondary-color)
+            
         }
     }
 `;

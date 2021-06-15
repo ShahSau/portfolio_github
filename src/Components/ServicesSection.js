@@ -31,7 +31,7 @@ function ServicesSection() {
                         paragraph={'Web development gives me the opportunity to express myself creatively on the internet. And I love to see my imagination come to life.'}
                     />
                      </motion.div>
-                    <div className="mid-card"> </div>
+                    
                     <motion.div
                     initial={{opacity: 0,y:250}}
                     animate={{opacity: 1,y:1}}
@@ -44,18 +44,18 @@ function ServicesSection() {
                         paragraph={'The human visual system does not perceive the world in the same manner as digital detectors and I love to create link between them.'}
                     />    
                     </motion.div>  
-                    <div className="mid-card"> </div>
+                    
                      <div> 
                      <motion.div
                     initial={{opacity: 0,y:250}}
                     animate={{opacity: 1,y:1}}
                     exit={{opacity: 1,y:0}}
-                    transition={{delay: 1, duration: 2.25}}
+                    transition={{delay: 1, duration: 1.5}}
                     >
                     <ServiceCard 
                             image={design} 
                             title={'Data analysis'} 
-                            paragraph={'I love making sense of unorganized, messy data and visualizing my findings.'}
+                            paragraph={'I love making sense of unorganized, messy data and visualizing my findings for better utilization of data.'}
                         />
                         </motion.div> 
                      </div> 
