@@ -80,7 +80,7 @@ function ContactPage() {
                 initial={{opacity: 0,y:250}}
                 animate={{opacity: 1,y:1}}
                 exit={{opacity: 1,y:0}}
-                transition={{ delay:2,duration: 3}}
+                transition={{ duration: 2}}
             >
                 
                 <div className="right-content">

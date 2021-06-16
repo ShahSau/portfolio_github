@@ -9,12 +9,12 @@ function SkillPage() {
   return (
     <MainLayout>
         <SkillsStyled>
-        <motion.div
+        {/* <motion.div
         initial={{opacity: 0,x:-250 , y:0}}
         animate={{opacity: 1,x:1, y:1}}
         exit={{opacity: 1,y:0, x:250}}
         transition={{ duration: 2.5}}
-    >
+    > */}
         <Title title={'Skills'} span={'Skills'} />
             <InnerLayout className={'skill'}>
                 {
@@ -42,7 +42,7 @@ function SkillPage() {
                     })
                 }
             </InnerLayout>
-            </motion.div>
+            {/* </motion.div> */}
         </SkillsStyled>
     </MainLayout>
 )

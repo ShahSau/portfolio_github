@@ -65,15 +65,15 @@ function Resume() {
                     <SmallTitle icon={certificate} title={'Certificates'} />
                 </div>
                 <div className="resume-content "> 
-                <div data-aos='fade-right'>
+                    <div data-aos='fade-right'>
                     <ResumeItem 
                         year={'February 2021'} 
                         title={'Build Python Web Apps with Flask'}
                         subTitle={'Codecademy'}
                         text={'Flask is a Python web framework that makes it easy to create a fully-featured web application. Learn the basics of this popular framework so that you can create your own web application with a Python back-end. Adding databases to your web apps to customize user experiences.'}
                     />
-                </div>
-                <div data-aos='fade-left'>
+                    </div>
+                    <div data-aos='fade-left'>
                     <ResumeItem 
                         year={'December 2020'} 
                         title={'JavaScript Algorithms and Data Structures'}
@@ -81,7 +81,7 @@ function Resume() {
                         text={'In fundamentals you will be creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. You\'ll also learn two important programing styles or paradigms: Object Oriented Programing (OOP), and Functional Programing (FP).'}
                     />
                     </div>
-                <div data-aos='fade-right'>
+                    <div data-aos='fade-right'>
                     <ResumeItem 
                         year={'March 2020'} 
                         title={'Become a Django Developer'}
