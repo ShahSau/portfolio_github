@@ -60,12 +60,12 @@ function Resume() {
                     </div>
                 </div>
                 {/* /* certificate  */}
-                <div data-aos='fade-right'>
+                
                 <div className="small-title u-small-title-margin">
                     <SmallTitle icon={certificate} title={'Certificates'} />
                 </div>
                 <div className="resume-content "> 
-                
+                <div data-aos='fade-right'>
                     <ResumeItem 
                         year={'February 2021'} 
                         title={'Build Python Web Apps with Flask'}

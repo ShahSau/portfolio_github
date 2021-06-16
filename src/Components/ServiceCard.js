@@ -20,9 +20,12 @@ const ServiceCardStyled = styled.div`
     border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     transition: all .4s ease-in-out;
+    word-spacing: 0.2rem;
     &:hover{
         border-top: 8px solid var(--primary-color);
         transform: translateY(3px);
+        cursor:pointer;
+        transform:  scaleY(1.05);
     }
     .container{
         padding: 1.2rem;

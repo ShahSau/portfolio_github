@@ -16,24 +16,7 @@ function ImageSection() {
                 my knowledge while making a valuable contribution to cross-functional development teams.
                     
                 </p>
-                {/* <div className="about-info">
-                    <div className="info-title">
-                        <p>Full Name</p>
-                        <p>Age</p>
-                        <p>Nationality </p>
-                        <p>Languages </p>
-                        <p>Location</p>
-                        <p>Service</p>
-                    </div>
-                    <div className="info">
-                        <p>: Lorem Ipsum</p>
-                        <p>: 36</p>
-                        <p>: Spainsh </p>
-                        <p>: Spanish, French, English </p>
-                        <p>: London, United Kingdom</p>
-                        <p>: Freelance</p>
-                    </div>
-                </div> */}
+              
                 <PrimaryButton title={'My work'}/>
             </div>
         </ImageSectionStyled>
@@ -44,6 +27,7 @@ function ImageSection() {
 const ImageSectionStyled = styled.div`
     margin-top: 5rem;
     display: flex;
+    word-spacing: 0.25rem;
     @media screen and (max-width:1000px){
         flex-direction: column;
         .left-content{

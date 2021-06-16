@@ -10,9 +10,9 @@ function SkillPage() {
     <MainLayout>
         <SkillsStyled>
         <motion.div
-        initial={{opacity: 0,y:250}}
-        animate={{opacity: 1,y:1}}
-        exit={{opacity: 1,y:0}}
+        initial={{opacity: 0,x:-250 , y:0}}
+        animate={{opacity: 1,x:1, y:1}}
+        exit={{opacity: 1,y:0, x:250}}
         transition={{ duration: 2.5}}
     >
         <Title title={'Skills'} span={'Skills'} />
@@ -28,7 +28,7 @@ function SkillPage() {
                       
                                         {skill.image.map(img =>{ 
                                             return (
-                                            <img src= {img} alt={skill.id}/>
+                                            <img key={Math.random()}src= {img} alt={skill.id}/>
                                         
                                             )
                                              })}
