@@ -11,6 +11,8 @@ import Dialogs from '../Components/Dialogs'
 import {motion} from "framer-motion";
 
 
+
+
 function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
@@ -20,6 +22,7 @@ function ContactPage() {
     // const handleClickOpen = () => {
     //   setOpen(true);
     // };
+
     const handleClose = () => {
       setOpen(false);
     };
@@ -74,6 +77,8 @@ function ContactPage() {
 
                 </div>
                 
+
+
                 
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'+358452249949'}  />
@@ -118,6 +123,12 @@ const ContactPageStyled = styled.section`
         }
         .form{
             width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+
             @media screen and (max-width: 502px){
                 width: 100%;
             }
@@ -130,35 +141,51 @@ const ContactPageStyled = styled.section`
                     left: 20px;
                     top: -19px;
                     display: inline-block;
-                    background-color: var(--background-dark-color);
+                     
                     padding:0 .5rem;
                     color: inherit;
                 }
-                input{
+                input[type=text], input[type=email] {
                     border: 1px solid var(--border-color);
                     outline: none;
                     background: transparent;
                     height: 50px;
                     padding:0 15px;
                     width: 100%;
-                    color: inherit;
+                    color: #fff;
+                    
+                    
                 }
                 textarea{
                     background-color: transparent;
                     border: 1px solid var(--border-color);
                     outline: none;
-                    color: inherit;
+                    color: #fff;
                     width: 100%;
                     padding: .8rem 1rem;
+                    
                 }
+                input[type=text]:focus,input[type=email]:focus,textarea:focus {
+                     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                     backdrop-filter: blur(8.5px);
+                     -webkit-backdrop-filter: blur(8.5px);
+                     border-radius: 50px;
+                    //  label{
+                    //     color: #fff;
+                    //     left: 0px;
+                    //     top: -9px;
+                    //     tansform: trnslate(1.5);
+                     }
+                }
+                
             }
             .button {
                 position: relative;
                 display: block;
-                width: 200px;
-                height: 36px;
+                width: 100%;
+                height: 200%;
                 border-radius: 40px;
-                background-color: #1c89ff;
+                background-color: #708090;
                 border: solid 1px transparent;
                 color: #fff;
                 font-size: 18px;
