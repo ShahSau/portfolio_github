@@ -62,7 +62,7 @@ function ContactPage() {
                             <input type="text" id="subject" name="subject"/>
                         </div>
                         <div className="form-field">
-                            <label htmlFor="text-area">Enter your Message*</label>
+                            <label htmlFor="text-area" className="try">Enter your Message*</label>
                             <textarea id="textarea" cols="30" rows="10" name="message"></textarea>
                         </div>
                         <div className="form-field f-button">
@@ -170,13 +170,8 @@ const ContactPageStyled = styled.section`
                      backdrop-filter: blur(8.5px);
                      -webkit-backdrop-filter: blur(8.5px);
                      border-radius: 50px;
-                    //  label{
-                    //     color: #fff;
-                    //     left: 0px;
-                    //     top: -9px;
-                    //     tansform: trnslate(1.5);
-                     }
-                }
+                
+            }
                 
             }
             .button {
