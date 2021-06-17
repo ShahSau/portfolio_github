@@ -10,6 +10,7 @@ import emailjs from 'emailjs-com';
 import Dialogs from '../Components/Dialogs'
 import {motion} from "framer-motion";
 
+
 function ContactPage() {
     const phone = <PhoneIcon />
     const email = <EmailIcon />
@@ -39,12 +40,7 @@ function ContactPage() {
             <Title title={'Contact'} span={'Contact'} />
             <ContactPageStyled >
             <InnerLayout className={'contact-section'}>
-            <motion.div
-                initial={{opacity: 0,y:250}}
-                animate={{opacity: 1,y:1}}
-                exit={{opacity: 1,y:0}}
-                transition={{ duration: 2}}
-            >
+            
                 <div className="left-content">
                     <div className="contact-title">
                         <h4>Get In Touch</h4>
@@ -68,28 +64,24 @@ function ContactPage() {
                         </div>
                         <div className="form-field f-button">
                            
-                            <input type="submit" className="button" value="Send Email"></input>
+                            <input type="submit" className="button" value="Send Email">
+                            </input>
+                            
                            
                         </div>
                     </form>
                     
 
                 </div>
-                </motion.div>
-                <motion.div
-                initial={{opacity: 0,y:250}}
-                animate={{opacity: 1,y:1}}
-                exit={{opacity: 1,y:0}}
-                transition={{ duration: 2}}
-            >
+                
                 
                 <div className="right-content">
                     <ContactItem title={'Phone'} icon={phone} cont1={'+358452249949'}  />
-                    <ContactItem title={'Email'} icon={email} cont1={'shahriarksaurov@gmail.com'}/>
+                    <ContactItem title={'Email'} icon={email} cont1={'shahriarksaurov@gmail.com'} />
                     <ContactItem title={'Address'} icon={location} cont1={'Pihlajamäki Helsinki, 00710'} cont2={'Finland'} />
                     
                 </div>
-                </motion.div>
+                
                 <Dialogs handleClickOpen={sendEmail} handleClose={handleClose} open={open}/>
             </InnerLayout>
             </ContactPageStyled>
@@ -110,7 +102,9 @@ const ContactPageStyled = styled.section`
         }
         .right-content{
             display: grid;
+            cursor: pointer;
             grid-template-columns: repeat(1, 1fr);
+            
             @media screen and (max-width: 502px){
                 width: 70%;
             }
@@ -163,7 +157,7 @@ const ContactPageStyled = styled.section`
                 display: block;
                 width: 200px;
                 height: 36px;
-                border-radius: 18px;
+                border-radius: 40px;
                 background-color: #1c89ff;
                 border: solid 1px transparent;
                 color: #fff;
@@ -174,11 +168,13 @@ const ContactPageStyled = styled.section`
                 &:hover {
                   background-color: #27408B;
                   border-color: #fff;
-                  color:#fff;
+                  color:#000;
                   transition: all .5s ease-in-out;
+                  border-radius: 10px;
                 }
                 
               }
+            
             
         }
     }
