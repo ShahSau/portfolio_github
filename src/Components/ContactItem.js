@@ -37,8 +37,9 @@ const ContactItemStyled = styled.div`
         margin-bottom: 2.5rem;
     }
     &:hover{
-        transition: 0.5s;
-        background-color: #f0f0f0;
+        transform: rotate(0deg) scale(1.07);
+        transition: all ease-in-out;
+        background: linear-gradient(45deg ,#708090, #696969, #A9A9A9);
         
         .before{
             display:none;

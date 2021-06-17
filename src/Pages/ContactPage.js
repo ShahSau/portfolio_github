@@ -106,7 +106,7 @@ const ContactPageStyled = styled.section`
             grid-template-columns: repeat(1, 1fr);
             
             @media screen and (max-width: 502px){
-                width: 70%;
+                width: 100%;
             }
         }
         .contact-title{
