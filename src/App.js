@@ -15,7 +15,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { Route, useLocation, Switch as Switching } from "react-router";
 import Switch from '@material-ui/core/Switch'
 import { IconButton } from "@material-ui/core";
-
+import ClearIcon from '@material-ui/icons/Clear';
 
 import { AnimatePresence} from "framer-motion";
 function App() {
@@ -59,12 +59,21 @@ function App() {
               </div>
             </div>
         </div> */}
-
-        <div className="ham-burger-menu">
-          <IconButton onClick={() => setNavToggle(!navToggle)}>
+        {!navToggle && (
+          <div className="ham-burger-menu">
+          <IconButton onClick={() => setNavToggle(true)}>
               <MenuIcon />
           </IconButton>
         </div>
+        )}
+         {navToggle && (
+          <div className="ham-burger-menu">
+          <ClearIcon onClick={() => setNavToggle(false)}>
+              <MenuIcon />
+          </ClearIcon>
+        </div>
+        )}
+
         <AnimatePresence exitBeforeEnter initial={false}>
         <MainContentStyled>
           <div className="lines">
