@@ -6,8 +6,12 @@ function Button({filter, button}) {
         <ButtonsStyled>
             {
                 button.map((but, i) =>{
+                    
+                    
                     return <ButtonStyled key={i} onClick={() => filter(but)}>
+                        
                         {but}
+                        
                     </ButtonStyled>
                 })
             }
@@ -19,6 +23,7 @@ const ButtonStyled = styled.button`
     outline: none;
     border: none;
     background-color: var(--background-light-color-2);
+    
     padding: .4rem 2rem;
     font-size: inherit;
     color: var(--white-color);
@@ -28,6 +33,7 @@ const ButtonStyled = styled.button`
     &:active ,&:focus{
         background-color: var(--primary-color);
         color:#000;
+        transform:scale(1.1);
     }
     &:hover{
         background-color: var(--primary-color);
@@ -44,5 +50,6 @@ const ButtonsStyled = styled.div`
     flex-wrap: wrap;
     width: 70%;
     margin: 2.4rem auto;
+    
 `;
 export default Button;

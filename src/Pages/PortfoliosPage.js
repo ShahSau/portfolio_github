@@ -16,12 +16,12 @@ function PortfoliosPage() {
 
         if(button === 'All'){
             setMenuItems(portfolios);
-            
             return;
         }
 
         const filteredData = portfolios.filter(item => item.category === button);
         setMenuItems(filteredData);
+        
     }
     return (
     //     <motion.div
@@ -33,8 +33,9 @@ function PortfoliosPage() {
         <MainLayout>
             <Title title={'Portfolios'} span={'portfolios'} />
             <InnerLayout>
-
-                <Button filter={filter} button={button} />
+                 <Button filter={filter} button={button} />
+                
+                
                 <Menu menuItem={menuItem}/>
             </InnerLayout>
         </MainLayout>
