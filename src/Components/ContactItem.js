@@ -33,12 +33,14 @@ const ContactItemStyled = styled.div`
     background-color: var(--background-dark-grey);
     display: flex;
     align-items: center;
+    
     &:not(:last-child){
         margin-bottom: 2.5rem;
     }
     &:hover{
-        transform: rotate(0deg) scale(1.07);
-        transition: all ease-in-out;
+        transform: rotate(0deg) scale(1);
+        transition: all 0.5s ease-in-out;
+        
         background: linear-gradient(45deg ,#708090, #696969, #A9A9A9);
         
         .before{

@@ -63,14 +63,14 @@ const SkillsStyled = styled.div`
             cursor: pointer;
             &:hover{
                 transform: rotate(0deg) scale(1.07);
-                transition: all .2s ease-in-out;
+                transition: all .4s ease-in-out;
                 background: linear-gradient(45deg ,#708090, #696969, #A9A9A9);
                 // backgroundImage: 'linear-gradient(45deg, #FFC312, #EE5A24, #00a8ff)',
                 
                 .title{
                     color: #171717;
                     text-shadow:1px 1.25px #A9A9A9;
-                    transition: all .2s ease-in-out;
+                    transition: all .4s ease-in-out;
                 }
                 
             }
