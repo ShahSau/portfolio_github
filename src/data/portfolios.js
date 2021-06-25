@@ -120,7 +120,7 @@ const portfolios = [
         category: 'FrontEnd',
         image: img11,
         link1: 'https://github.com/ShahSau/React/tree/main/Movie_search_app',
-        link2: 'https://60b93d8a3881493ba0b1d7d3--optimistic-mahavira-c867c5.netlify.app/',
+        link2: 'https://60d61d3781e2cf8aa7ed8471--elastic-keller-07ea9c.netlify.app/',
         title: 'Entertainment Vibe',
         technologies:["React,", "React-DOM,", "material ui,", "REST API."],
         text: 'This is an movie search app using data from The Movie Database.'
