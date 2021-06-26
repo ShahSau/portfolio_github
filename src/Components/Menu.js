@@ -10,11 +10,23 @@ function Menu({menuItem}) {
             {
                 menuItem.map((item)=>{
                     return <div className="grid-item" key={item.id}>
+                        
+
                         <div className="portfolio-content">
-                            <div className="portfolio-image">
+                            
+                                <div className="">
                                 <img src={item.image} alt=""/>
-                                <ul>
-                                    <li>
+                                </div>
+                                <div className="details">
+                                
+                                <div className='inline'>
+                                <p>Details:{item.text}</p>
+                                &nbsp;
+                                <div className='inline'>Technologies:{item.technologies.map((item)=>{
+                                    return <p>{item} </p>
+                                })}
+                                &nbsp;
+                                <li>
                                         <a href={item.link1} target='_blank' rel="noreferrer">
                                             <GitHub />
                                         </a>
@@ -26,16 +38,21 @@ function Menu({menuItem}) {
                                         </a>
                                     </li>
                                     )}
-                                </ul>
-                            </div>
+                                </div>
+                                </div>
                                 
-                            
+                            </div>
+                            <div className='box'>
                             <h6>{item.title}</h6>
-                            <p>{item.text}</p>
+                            
+                            {/* <p>{item.text}</p>
                             <div className='inline'>Technologies: &nbsp;{item.technologies.map((item)=>{
                                     return <p>{item}&nbsp;</p>
-                                })}</div>
+                                })}</div> */}
+                            </div>
                         </div>
+                        
+                        {/* </div> */}
                     </div>
                 })
             }
@@ -72,15 +89,16 @@ const MenuItemStyled = styled.div`
                 height: 30vh;
                 object-fit: cover;
             }
-            ul{
-                transform: translateY(-600px);
+            .details{
+                // transform: translateY(-600px);
                 transition: all .4s ease-in-out;
                 position: absolute;
                 left: 50%;
-                top: 40%;
+                top: 10%;
                 opacity: 0;
+                overflow:hidden;
                 li{
-                        background-color: var(--border-color);
+                        background-color: var(--background-dark-color);
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -102,7 +120,7 @@ const MenuItemStyled = styled.div`
                     }
             }
 
-            .portfolio-image{
+            img{
                 &::before{
                     content: "";
                     position: relative;
@@ -111,10 +129,18 @@ const MenuItemStyled = styled.div`
                     height: 0;
                     width: 0;
                     transition: all .4s ease-in-out;
+                    
                 }
             }
-            .portfolio-image:hover{
-                ul{
+            img:hover{
+                opacity:0.2;
+                transform: translateY(20px);
+                transition: 0.4s ease-out;
+                .box{
+                    
+                    visibility:hidden;
+                }
+                .details{
                     transform: translateY(0);
                     transform: translate(-50%, -50%);
                     display: flex;
@@ -122,7 +148,11 @@ const MenuItemStyled = styled.div`
                     justify-content: center;
                     transition: all .5s ease-in-out;
                     opacity: 1;
+                    color:#007bff;
+                    overflow: hidden;
+                   
                     li{
+                        background-color: var(--background-dark-color);
                         transition: all .4s ease-in-out;
                         &:hover{
                             background-color: var(--primary-color);

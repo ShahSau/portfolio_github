@@ -33,7 +33,7 @@ const portfolios = [
         link2: '',
         title: 'COVID-19 Analysis',
         technologies:["Pandas,", "Plotly,", "Folium,", "Numpy."],
-        text: 'Analyzed Covid-19 Pandemic dataset from Johns Hopkins University and Terveyden ja hyvinvoinnin laitos(THL).'
+        text: 'Analyzed Covid-19 Pandemic dataset from Johns Hopkins University & THL.'
     },
     {
         id: 2,
@@ -73,7 +73,7 @@ const portfolios = [
         link2: '',
         title: 'Weather App (Flask)',
         technologies:["flask,", "flask sqlalchemy,", "HTML5,", "CSS3,", "Docker,", "REST API."],
-        text: 'A simple weather app, that takes input from users and display the current weather in the city of the user\'s choice.'
+        text: 'A simple weather app.'
     },
     {
         id: 6,
@@ -133,7 +133,7 @@ const portfolios = [
         link2: '',
         title: 'House Sales in King County, USA',
         technologies:["pandas,", "seaborn,", "scikit-learn,", "numpy."],
-        text: 'This dataset contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015.'
+        text: 'This dataset contains house sale prices for King County in the year 2014 & 2015.'
     },
 
 ]

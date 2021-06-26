@@ -5,6 +5,7 @@ import portfolios from '../data/portfolios';
 import Menu from '../Components/Menu';
 import Button from '../Components/Button';
 import {motion} from "framer-motion";
+import Menu2 from '../Components/Menu2';
 
 const allButtons = ['All', ...new Set(portfolios.map(item => item.category))]
 
@@ -36,7 +37,7 @@ function PortfoliosPage() {
                  <Button filter={filter} button={button} />
                 
                 
-                <Menu menuItem={menuItem}/>
+                <Menu2 menuItem={menuItem}/>
             </InnerLayout>
         </MainLayout>
         // </motion.div>
