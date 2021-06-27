@@ -154,7 +154,7 @@ const portfolios = [
         link1: 'https://github.com/ShahSau/React/tree/main/Rent-Car',
         link2: '',
         link3: 'https://youtu.be/0ObE4fOsGTw',
-        title: 'Entertainment Vibe',
+        title: 'Rent A Car',
         technologies:["React,", "Typescript", "Tailwind"],
         text: 'This is a car renting website.'
     },
