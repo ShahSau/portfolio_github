@@ -2,8 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
-import { Grid } from "@material-ui/core";
-// import { makeStyles } from '@material-ui/core/styles';
+import YouTubeIcon from '@material-ui/icons/YouTube';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
@@ -24,7 +23,7 @@ function Menu({menuItem}) {
         
   return (
     
-    <div>
+    <>
     <Card className="root" >
       <CardActionArea >
         <CardMedia
@@ -36,40 +35,46 @@ function Menu({menuItem}) {
           className="img"
         />
       
-        <CardContent className="card">
+      <CardContent className="card">
           <Typography gutterBottom variant="h6" component="h5">
           {item.title}
           </Typography>
           <div className="details">
-          <Typography variant="body2" color="#fff" component="p">
-          Details: {item.text}
-          <div className='inline'>Technologies:{item.technologies.map((item)=>{
+            <Typography variant="body2" color="#fff" component="p">
+              Details: {item.text}
+              <div className='inline'>Technologies:{item.technologies.map((item)=>{
                                     return <>{item} </>
                                 })}
-            </div>
-          </Typography>
+              </div>
+            </Typography>
           </div>
-        {/* </CardContent>
-      </CardActionArea> */}
-      <CardActions style={{justifyContent:"center"}} >
         
-        <a href={item.link1} target='_blank' rel="noreferrer">
-        <GitHub />
-        </a>
+        <CardActions style={{justifyContent:"center"}} className="links">
         
-        {item.link2 !== '' && (
-                                    <li>
-                                        <a href={item.link2} target='_blank' rel="noreferrer" >
-                                            <LanguageIcon />
-                                        </a>
-                                    </li>
-                                    )} 
-      </CardActions> 
+          <a href={item.link1} target='_blank' rel="noreferrer">
+            <GitHub />
+          </a>
+        
+          {item.link2 !== '' && (
+            <li>
+              <a href={item.link2} target='_blank' rel="noreferrer" >
+                <LanguageIcon />
+              </a>
+            </li>
+          )} 
+          {item.link3 !== '' && (
+            <li>
+              <a href={item.link3} target='_blank' rel="noreferrer" >
+                <YouTubeIcon />
+              </a>
+            </li>
+          )} 
+        </CardActions> 
       </CardContent>
       </CardActionArea>
      
     </Card>
-    </div>
+    </>
     
   );
   
@@ -124,7 +129,7 @@ function Menu({menuItem}) {
        },
     },  
     
-    
+   
 
 
 

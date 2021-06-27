@@ -10,7 +10,7 @@ import img8 from '../img/portImages/8.png'
 import img9 from '../img/portImages/9.png'
 import img11 from '../img/portImages/11.png'
 import img12 from '../img/portImages/12.png'
-
+import img13 from '../img/portImages/13.png'
 
 
 
@@ -21,6 +21,7 @@ const portfolios = [
         image: img0,
         link1: 'https://github.com/ShahSau/part3_HU',
         link2: 'https://calm-thicket-11450.herokuapp.com/',
+        link3: '',
         title: 'CURD application',
         technologies:["React,", "Express,", "Node,", "MongoDB,", "Heroku,","REST API."],
         text: 'Phonebook app where user add, remove or update data.'
@@ -31,6 +32,7 @@ const portfolios = [
         image: img1,
         link1: 'https://github.com/ShahSau/Python_Data_Science/tree/master/COVID-19%20Analysis',
         link2: '',
+        link3: '',
         title: 'COVID-19 Analysis',
         technologies:["Pandas,", "Plotly,", "Folium,", "Numpy."],
         text: 'Analyzed Covid-19 Pandemic dataset from Johns Hopkins University & THL.'
@@ -41,6 +43,7 @@ const portfolios = [
         image: img2,
         link1: 'https://github.com/ShahSau/React/tree/main/Recipe%20App/recipe-app',
         link2: 'https://6097058f5a99220b5a6b58c4--naughty-wescoff-9ad9ba.netlify.app/',
+        link3: '',
         title: 'Recipe App',
         technologies:["React,", "React Route,", "Bootstrap,", "REST API."],
         text: 'This website was build using recipe API from Edamam .'
@@ -51,6 +54,7 @@ const portfolios = [
         image: img3,
         link1: 'https://github.com/ShahSau/Flask/tree/main/FeedBackForm%20',
         link2: '',
+        link3: '',
         title: 'FeedBack Form',
         technologies:["Flask,","Jinja2,","SQLAlchemy"],
         text: 'A feddback form, that stores data from the form.'
@@ -61,6 +65,7 @@ const portfolios = [
         image: img4,
         link1: 'https://github.com/ShahSau/R_Data_Science/blob/master/DataCamp-R/%20RISE%20AND%20FALL%20OF%20PROGRAMMING%20LANGUAGES/Rise%20and%20Fall%20of%20Programming%20Languages%202/notebook.ipynb',
         link2: '',
+        link3: '',
         title: 'Trend in Programming Languages',
         technologies:["readr,", "dplyr,", "tidyverse,", "ggplot2."],
         text: 'Analyzing the trend in programming language from year 2008 to 2018 using data obtained from Stack Overflow.'
@@ -71,6 +76,7 @@ const portfolios = [
         image: img5,
         link1: 'https://github.com/ShahSau/Flask/tree/main/Weather%20app/weatherApp',
         link2: '',
+        link3: '',
         title: 'Weather App (Flask)',
         technologies:["flask,", "flask sqlalchemy,", "HTML5,", "CSS3,", "Docker,", "REST API."],
         text: 'A simple weather app.'
@@ -81,6 +87,7 @@ const portfolios = [
         image: img6,
         link1: 'https://github.com/ShahSau/React/tree/main/Pokemon%20',
         link2: 'https://6091a5202c719311ad1175be--epic-leakey-1c63a6.netlify.app/',
+        link3: '',
         title: 'Pokemon',
         technologies:["React,", "Bootstrap,", "REST API."],
         text: 'Data fetched from pokemon API and displayed using react.'
@@ -91,6 +98,7 @@ const portfolios = [
         image: img7,
         link1: 'https://github.com/ShahSau/JavaScript/tree/main/Killing%20Spider',
         link2: 'https://compassionate-joliot-a4dcf7.netlify.app/',
+        link3: '',
         title: 'Killing Spider',
         technologies:["Javascript,","HTML5,","CSS3."],
         text: 'A small RPG (Role Playing Game) using core Javascript, HTML5 and CSS3.'
@@ -101,6 +109,7 @@ const portfolios = [
         image: img8,
         link1: 'https://github.com/ShahSau/Python_Data_Science/tree/master/Flight%20Delays%20and%20Cancellations',
         link2: '',
+        link3: '',
         title: 'Flight Delays and Cancellations',
         technologies:["pandas,", "plotly,", "seaborn,", "dask."],
         text: 'Explored the flights in different airports in USA in 2015'
@@ -111,6 +120,7 @@ const portfolios = [
         image: img9,
         link1: 'https://github.com/ShahSau/Backend-Project/tree/main/Login_page_with_authentication',
         link2: 'https://stark-beach-09227.herokuapp.com/',
+        link3: '',
         title: 'Login page with authentication',
         technologies:["Javascript,", "Express,", "Node,", "Mongodb,","Passport.js."],
         text: 'Its a login page with authentication'
@@ -121,6 +131,7 @@ const portfolios = [
         image: img11,
         link1: 'https://github.com/ShahSau/React/tree/main/Movie_search_app',
         link2: 'https://60d61d3781e2cf8aa7ed8471--elastic-keller-07ea9c.netlify.app/',
+        link3: '',
         title: 'Entertainment Vibe',
         technologies:["React,", "React-DOM,", "material ui,", "REST API."],
         text: 'This is an movie search app using data from The Movie Database.'
@@ -131,9 +142,21 @@ const portfolios = [
         image: img12,
         link1: 'https://github.com/ShahSau/Python_Data_Science/blob/master/%20House%20Sales%20in%20King%20County%2C%20USA.ipynb',
         link2: '',
+        link3: '',
         title: 'House Sales in King County, USA',
         technologies:["pandas,", "seaborn,", "scikit-learn,", "numpy."],
         text: 'This dataset contains house sale prices for King County in the year 2014 & 2015.'
+    },
+    {
+        id: 13,
+        category: 'FrontEnd',
+        image: img13,
+        link1: 'https://github.com/ShahSau/React/tree/main/Rent-Car',
+        link2: '',
+        link3: 'https://youtu.be/0ObE4fOsGTw',
+        title: 'Entertainment Vibe',
+        technologies:["React,", "Typescript", "Tailwind"],
+        text: 'This is a car renting website.'
     },
 
 ]
