@@ -12,45 +12,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 import Typography from '@material-ui/core/Typography';
 
-// const useStyles = makeStyles({
-    // root: {
-    //   minWidth: 200,
-    //   textAlign: 'center',
-    //   flexGrow: 1,
-    //   '&:hover': {
-    //     transform: 'scale3d(1.05, 1.05, 1)',
-    //     transition: 'all .4s ease-in-out',
-    //     boxShadow: '3px 3px #383838',
-        
-        
-    //  },
-      
-    // },
-    
-    // card:{
-    //     backgroundColor: "#191D2B",
-    //     color: "#fff",
-    //     display: "flex",
-    //     flexDirection: "column",
-    //     justifyContent: "space-between",
-    //     '&:hover': {
-    //         backgroundColor: "#778899",
-    //         color:"#000",
-            
-    //      },
-    // },
-  //   link:{
-  //       '&:hover': {
-  //           transform: 'scale3d(1.5, 1.5, 1)',
-  //           transition: 'all .5s ease-in-out',
-            
-            
-            
-  //        },
-  //   },
-    
 
-  // });
   
 function Menu({menuItem}) {
     // const classes = useStyles();
@@ -64,47 +26,45 @@ function Menu({menuItem}) {
     
     <div>
     <Card className="root" >
-      <CardActionArea>
+      <CardActionArea >
         <CardMedia
           component="img"
           alt={item.title}
           height="250"
           image={item.image}
           title={item.title}
+          className="img"
         />
+      
         <CardContent className="card">
           <Typography gutterBottom variant="h6" component="h5">
           {item.title}
           </Typography>
-          {/* <Typography variant="body2" color="#fff" component="p">
-          Details:{item.text}
+          <div className="details">
+          <Typography variant="body2" color="#fff" component="p">
+          Details: {item.text}
           <div className='inline'>Technologies:{item.technologies.map((item)=>{
                                     return <>{item} </>
                                 })}
             </div>
-          </Typography> */}
+          </Typography>
+          </div>
         {/* </CardContent>
       </CardActionArea> */}
-      {/* <CardActions style={{justifyContent:"center"}} >
-        {/* <Button size="small" color="primary">
-          Share
-        </Button> */}
-        {/* <GitHub style={{}} className={classes.link}/>
-        <a href={item.link1} target='_blank' rel="noreferrer">
-        <GitHub style={{}} className={classes.link}/>
-        </a> */}
+      <CardActions style={{justifyContent:"center"}} >
         
-        {/* <Button size="small" color="primary">
-          Learn More
-        </Button> */}
-        {/* {item.link2 !== '' && (
+        <a href={item.link1} target='_blank' rel="noreferrer">
+        <GitHub />
+        </a>
+        
+        {item.link2 !== '' && (
                                     <li>
                                         <a href={item.link2} target='_blank' rel="noreferrer" >
                                             <LanguageIcon />
                                         </a>
                                     </li>
-                                    )}
-      </CardActions> */} 
+                                    )} 
+      </CardActions> 
       </CardContent>
       </CardActionArea>
      
@@ -133,11 +93,23 @@ function Menu({menuItem}) {
       minWidth: 200;
       textAlign: center;
       flexGrow: 1;
+      background-color: #191D2B;
       &:hover{
         transform: scale3d(1.05, 1.05, 1);
         transition: all .4s ease-in-out;
-        boxShadow: 3px 3px #383838; 
+        boxShadow: 3px 3px #fff; 
+        .card{
+          transform: translateY(-50%);
+          
+        }
+        .img{
+          visibility:hidden;
+        }
+       
      },
+    }
+    .img{
+      visibility:visible;
     }
     .card{
       background-color: #191D2B;
@@ -145,12 +117,14 @@ function Menu({menuItem}) {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      
       &:hover{
           background-color: #778899;
           color:#000;
        },
-  },    
-
+    },  
+    
+    
 
 
 
