@@ -93,17 +93,6 @@ const portfolios = [
         text: 'Data fetched from pokemon API and displayed using react.'
     },
     {
-        id: 7,
-        category: 'Others',
-        image: img7,
-        link1: 'https://github.com/ShahSau/JavaScript/tree/main/Killing%20Spider',
-        link2: 'https://compassionate-joliot-a4dcf7.netlify.app/',
-        link3: '',
-        title: 'Killing Spider',
-        technologies:["Javascript,","HTML5,","CSS3."],
-        text: 'A small RPG (Role Playing Game) using core Javascript, HTML5 and CSS3.'
-    },
-    {
         id: 8,
         category: 'Data Analysis',
         image: img8,
@@ -149,7 +138,7 @@ const portfolios = [
     },
     {
         id: 13,
-        category: 'FrontEnd',
+        category: 'Design',
         image: img13,
         link1: 'https://github.com/ShahSau/React/tree/main/Rent-Car',
         link2: '',
@@ -157,6 +146,17 @@ const portfolios = [
         title: 'Rent A Car',
         technologies:["React,", "Typescript", "Tailwind"],
         text: 'This is a car renting website.'
+    },
+    {
+        id: 7,
+        category: 'Others',
+        image: img7,
+        link1: 'https://github.com/ShahSau/JavaScript/tree/main/Killing%20Spider',
+        link2: 'https://compassionate-joliot-a4dcf7.netlify.app/',
+        link3: '',
+        title: 'Killing Spider',
+        technologies:["Javascript,","HTML5,","CSS3."],
+        text: 'A small RPG (Role Playing Game) using core Javascript, HTML5 and CSS3.'
     },
 
 ]
