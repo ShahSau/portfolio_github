@@ -21,8 +21,9 @@ function Menu({menuItem}) {
                                 
                                 <div className='inline'>
                                 <p>Details:{item.text}</p>
+                                
                                 &nbsp;
-                                <div className='inline'>Technologies:{item.technologies.map((item)=>{
+                                <div className='inline'>Technologies: {item.technologies.map((item)=>{
                                     return <p>{item} </p>
                                 })}
                                 &nbsp;

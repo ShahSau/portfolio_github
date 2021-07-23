@@ -23,8 +23,8 @@ const portfolios = [
         link2: 'https://techshop-shah.herokuapp.com',
         link3: '',
         title: 'Tech Shop',
-        technologies:["React,", "Django,", "Django-Rest,", "Bootstrap,", "simpleJWT Authentication,", "Postgresql,", "AWS,", "WhiteNoise"],
-        text: 'Fully fledged E-commerce website for a tech shop'
+        technologies:["React,", "Django,", "Django-Rest,", "Bootstrap,", "simpleJWT Authentication,", "Postgresql,", "AWS,", "WhiteNoise."],
+        text: 'Fully fledged E-commerce website for a tech shop.'
     },
     {
         id: 0,
@@ -32,7 +32,7 @@ const portfolios = [
         image: img0,
         link1: 'https://github.com/ShahSau/part3_HU',
         link2: 'https://calm-thicket-11450.herokuapp.com/',
-        link3: '',
+        link3: 'https://youtu.be/uSEI-h2RCT4',
         title: 'CURD application',
         technologies:["React,", "Express,", "Node,", "MongoDB,", "Heroku,","REST API."],
         text: 'Phonebook app where user add, remove or update data.'
