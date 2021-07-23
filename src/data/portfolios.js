@@ -11,10 +11,21 @@ import img9 from '../img/portImages/9.png'
 import img11 from '../img/portImages/11.png'
 import img12 from '../img/portImages/12.png'
 import img13 from '../img/portImages/13.png'
-
+import img00 from '../img/portImages/00.png'
 
 
 const portfolios = [
+    {
+        id: 11111111,
+        category: 'Fullstack',
+        image: img00,
+        link1: 'https://github.com/ShahSau/Tech_Shop',
+        link2: 'https://techshop-shah.herokuapp.com',
+        link3: '',
+        title: 'Tech Shop',
+        technologies:["React,", "Django,", "Django-Rest,", "Bootstrap,", "simpleJWT Authentication,", "Postgresql,", "AWS,", "WhiteNoise"],
+        text: 'Fully fledged E-commerce website for a tech shop'
+    },
     {
         id: 0,
         category: 'Fullstack',
