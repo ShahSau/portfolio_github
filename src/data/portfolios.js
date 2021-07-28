@@ -12,7 +12,7 @@ import img11 from '../img/portImages/11.png'
 import img12 from '../img/portImages/12.png'
 import img13 from '../img/portImages/13.png'
 import img00 from '../img/portImages/00.png'
-
+import img0000 from '../img/portImages/0000.png'
 
 const portfolios = [
     {
@@ -27,15 +27,15 @@ const portfolios = [
         text: 'Fully fledged E-commerce website for a tech shop.'
     },
     {
-        id: 0,
+        id: 1111,
         category: 'Fullstack',
-        image: img0,
-        link1: 'https://github.com/ShahSau/part3_HU',
-        link2: 'https://calm-thicket-11450.herokuapp.com/',
-        link3: 'https://youtu.be/uSEI-h2RCT4',
-        title: 'CURD application',
-        technologies:["React,", "Express,", "Node,", "MongoDB,", "Heroku,","REST API."],
-        text: 'Phonebook app where user add, remove or update data.'
+        image: img0000,
+        link1: 'https://github.com/ShahSau/Dev-Insta',
+        link2: 'https://hidden-ridge-66171.herokuapp.com/',
+        link3: '',
+        title: 'Dev Insta',
+        technologies:["React,", "Redux,","Express,", "Node,", "MongoDB,", "Heroku,","Express-validator,","REST API."],
+        text: 'A social network website for developers. In this website developers can create account, connect their github account, connect with each other, post, comment on other\'s post. '
     },
     {
         id: 1,
@@ -80,6 +80,17 @@ const portfolios = [
         title: 'Trend in Programming Languages',
         technologies:["readr,", "dplyr,", "tidyverse,", "ggplot2."],
         text: 'Analyzing the trend in programming language from year 2008 to 2018 using data obtained from Stack Overflow.'
+    },
+    {
+        id: 0,
+        category: 'Fullstack',
+        image: img0,
+        link1: 'https://github.com/ShahSau/part3_HU',
+        link2: 'https://calm-thicket-11450.herokuapp.com/',
+        link3: 'https://youtu.be/uSEI-h2RCT4',
+        title: 'CURD application',
+        technologies:["React,", "Express,", "Node,", "MongoDB,", "Heroku,","REST API."],
+        text: 'Phonebook app where user add, remove or update data.'
     },
     {
         id: 5,
