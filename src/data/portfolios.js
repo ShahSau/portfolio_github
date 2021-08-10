@@ -23,7 +23,7 @@ const portfolios = [
         link2: 'https://techshop-shah.herokuapp.com',
         link3: '',
         title: 'Tech Shop',
-        technologies:["React,", "Django,", "Django-Rest,", "Bootstrap,", "simpleJWT Authentication,", "Postgresql,", "AWS,", "WhiteNoise."],
+        technologies:["React,", "Redux,", "Django,", "Django-Rest,", "Bootstrap,", "simpleJWT Authentication,", "Postgresql,", "AWS,", "WhiteNoise."],
         text: 'Fully fledged E-commerce website for a tech shop.'
     },
     {
