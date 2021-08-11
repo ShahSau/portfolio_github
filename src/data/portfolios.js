@@ -11,6 +11,7 @@ import img9 from '../img/portImages/9.png'
 import img11 from '../img/portImages/11.png'
 import img12 from '../img/portImages/12.png'
 import img13 from '../img/portImages/13.png'
+import img14 from '../img/portImages/14.png'
 import img00 from '../img/portImages/00.png'
 import img0000 from '../img/portImages/0000.png'
 
@@ -52,12 +53,12 @@ const portfolios = [
         id: 2,
         category: 'FrontEnd',
         image: img2,
-        link1: 'https://github.com/ShahSau/React/tree/main/Recipe%20App/recipe-app',
-        link2: 'https://6097058f5a99220b5a6b58c4--naughty-wescoff-9ad9ba.netlify.app/',
+        link1: 'https://github.com/ShahSau/Backpackr',
+        link2: 'https://backpackr.netlify.app/',
         link3: '',
-        title: 'Recipe App',
-        technologies:["React,", "React Route,", "Bootstrap,", "REST API."],
-        text: 'This website was build using recipe API from Edamam .'
+        title: 'Backpackr',
+        technologies:["React,", "Material UI,", "Google Maps API,", "Rapid API,", "weather map API."],
+        text: 'This is a travel advisor website, where users can search restaurants, hotels and attractions near them. Users can change the location and also filter the result.It also shows the current weather at that location.'
     },
     {
         id: 3,
@@ -179,6 +180,17 @@ const portfolios = [
         title: 'Killing Spider',
         technologies:["Javascript,","HTML5,","CSS3."],
         text: 'A small RPG (Role Playing Game) using core Javascript, HTML5 and CSS3.'
+    },
+    {
+        id: 14,
+        category: 'FrontEnd',
+        image: img14,
+        link1: 'https://github.com/ShahSau/React/tree/main/Recipe%20App/recipe-app',
+        link2: 'https://6097058f5a99220b5a6b58c4--naughty-wescoff-9ad9ba.netlify.app/',
+        link3: '',
+        title: 'Recipe App',
+        technologies:["React,", "React Route,", "Bootstrap,", "REST API."],
+        text: 'This website was build using recipe API from Edamam .'
     },
 
 ]
