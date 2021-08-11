@@ -4,7 +4,7 @@ import img2 from '../img/portImages/2.png'
 import img3 from '../img/portImages/3.png'
 import img4 from '../img/portImages/4.png'
 import img5 from '../img/portImages/5.png'
-import img6 from '../img/portImages/6.png'
+// import img6 from '../img/portImages/6.png'
 import img7 from '../img/portImages/7.png'
 import img8 from '../img/portImages/8.png'
 import img9 from '../img/portImages/9.png'
@@ -104,17 +104,17 @@ const portfolios = [
         technologies:["flask,", "flask sqlalchemy,", "HTML5,", "CSS3,", "Docker,", "REST API."],
         text: 'A simple weather app.'
     },
-    {
-        id: 6,
-        category: 'FrontEnd',
-        image: img6,
-        link1: 'https://github.com/ShahSau/React/tree/main/Pokemon%20',
-        link2: 'https://6091a5202c719311ad1175be--epic-leakey-1c63a6.netlify.app/',
-        link3: 'https://youtu.be/MevCWZgfxuE',
-        title: 'Pokemon',
-        technologies:["React,", "Bootstrap,", "REST API."],
-        text: 'Data fetched from pokemon API and displayed using react.'
-    },
+//     {
+//         id: 6,
+//         category: 'FrontEnd',
+//         image: img6,
+//         link1: 'https://github.com/ShahSau/React/tree/main/Pokemon%20',
+//         link2: 'https://6091a5202c719311ad1175be--epic-leakey-1c63a6.netlify.app/',
+//         link3: 'https://youtu.be/MevCWZgfxuE',
+//         title: 'Pokemon',
+//         technologies:["React,", "Bootstrap,", "REST API."],
+//         text: 'Data fetched from pokemon API and displayed using react.'
+//     },
     {
         id: 8,
         category: 'Data Analysis',
@@ -187,7 +187,7 @@ const portfolios = [
         image: img14,
         link1: 'https://github.com/ShahSau/React/tree/main/Recipe%20App/recipe-app',
         link2: 'https://6097058f5a99220b5a6b58c4--naughty-wescoff-9ad9ba.netlify.app/',
-        link3: '',
+        link3: 'https://youtu.be/ttuUFpFtdzc',
         title: 'Recipe App',
         technologies:["React,", "React Route,", "Bootstrap,", "REST API."],
         text: 'This website was build using recipe API from Edamam .'
