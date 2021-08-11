@@ -110,7 +110,7 @@ const portfolios = [
         image: img6,
         link1: 'https://github.com/ShahSau/React/tree/main/Pokemon%20',
         link2: 'https://6091a5202c719311ad1175be--epic-leakey-1c63a6.netlify.app/',
-        link3: '',
+        link3: 'https://youtu.be/MevCWZgfxuE',
         title: 'Pokemon',
         technologies:["React,", "Bootstrap,", "REST API."],
         text: 'Data fetched from pokemon API and displayed using react.'
