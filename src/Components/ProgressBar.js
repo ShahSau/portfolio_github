@@ -1,18 +1,21 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 
-function ProgressBar({title, width, text}) {
-    return (
-        <ProgressBarStyled>
-            <h6>{title}</h6>
-            <div className="progress-bar">
-                <p>{text}</p>
-                <div className="progress">
-                    <span style={{width: width}}></span>
-                </div>
-            </div>
-        </ProgressBarStyled>
-    )
+function ProgressBar({ title, width, text }) {
+  return (
+    <ProgressBarStyled>
+      <h6>{title}</h6>
+      <div className="progress-bar">
+        <p>{text}</p>
+        <div className="progress">
+          <span style={{ width }} />
+        </div>
+      </div>
+    </ProgressBarStyled>
+  );
 }
 
 const ProgressBarStyled = styled.div`

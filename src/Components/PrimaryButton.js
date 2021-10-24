@@ -1,13 +1,16 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 
-function PrimaryButton({title,}) {
-    return (
-        <PrimaryButtonStyled>
-            
-            <a href="./portfolios">{title}</a>
-        </PrimaryButtonStyled>
-    )
+function PrimaryButton({ title }) {
+  return (
+    <PrimaryButtonStyled>
+
+      <a href="./portfolios">{title}</a>
+    </PrimaryButtonStyled>
+  );
 }
 
 const PrimaryButtonStyled = styled.a`

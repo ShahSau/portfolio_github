@@ -1,22 +1,24 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 import styled from 'styled-components';
 
-function Button({filter, button}) {
-    return (
-        <ButtonsStyled>
-            {
-                button.map((but, i) =>{
-                    
-                    
-                    return <ButtonStyled key={i} onClick={() => filter(but)}>
-                        
-                        {but}
-                        
-                    </ButtonStyled>
-                })
+function Button({ filter, button }) {
+  return (
+    <ButtonsStyled>
+      {
+                button.map((but, i) => (
+                  // eslint-disable-next-line react/no-array-index-key
+                  <ButtonStyled key={i} onClick={() => filter(but)}>
+
+                    {but}
+
+                  </ButtonStyled>
+                ))
             }
-        </ButtonsStyled>
-    )
+    </ButtonsStyled>
+  );
 }
 
 const ButtonStyled = styled.button`

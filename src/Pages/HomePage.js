@@ -1,73 +1,73 @@
-import React from 'react'
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 import GithubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Typical from 'react-typical';
+import { motion } from 'framer-motion';
 import Particle from '../Components/Particle';
-import Typical from 'react-typical'
-import {motion} from "framer-motion";
 
 function HomePage() {
-    return (
-        <motion.div
-      initial={{opacity: 0, x:250}} 
-      animate={{opacity: 1, x:0}} 
-      exit={{opacity: 0, x:-100}} 
-      transition={{delay: 0.0, duration: 1.5}}
+  return (
+    <motion.div
+      initial={{ opacity: 0, x: 250 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100 }}
+      transition={{ delay: 0.0, duration: 1.5 }}
     >
-        <HomePageStyled>
-            
-            <div className="particle-con">
-                <Particle />
+      <HomePageStyled>
+        <div className="particle-con">
+          <Particle />
+        </div>
+        <div className="typography">
+          <h1>
+            Hi, I&apos;m
+            {' '}
+            <span>Shahriar Saurov</span>
+          </h1>
+          <p>
+            <Typical
+              loop={Infinity}
+              wrapper="p"
+              steps={[
+                'I am a software developer',
+                2000,
+                'I am a web programmer',
+                2000,
+                'I am a data enthusiast',
+                2000,
+                'I am a nano-physics graduate',
+                2000,
+              ]}
+            />
+          </p>
+
+          <motion.div
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            exit={{ scaleY: 0 }}
+            transition={{ delay: 1.5, duration: 1.75 }}
+          >
+
+            <div className="icons">
+              <a href="https://www.linkedin.com/in/shahriar-karim-saurov-53a6ba4b/" className="icon i-linkedin">
+                <LinkedInIcon />
+              </a>
+              <a href="https://github.com/ShahSau" className="icon i-github">
+                <GithubIcon />
+              </a>
+              <a href="https://twitter.com/saurov_shahriar" className="icon ">
+                <TwitterIcon />
+              </a>
             </div>
-            
-            <div className="typography">
-                <h1>Hi, I'm <span>Shahriar Saurov</span></h1>
-                <p>
-                    <Typical
-                    loop={Infinity}
-                    wrapper="p"
-                    steps={[
-                        'I am a software developer',
-                        2000,
-                        'I am a web programmer',
-                        2000,
-                        'I am a data enthusiast',
-                        2000,
-                        'I am a nano-physics graduate',
-                        2000
-                    ]}
-                    />
-                </p>
 
-                <motion.div
-                    initial={{scaleY:0}}
-                    animate={{scaleY:1}}
-                    exit={{scaleY:0}}
-                    transition={{delay: 1.5, duration: 1.75}}
-                >
-
-                <div className="icons">
-                <a href="https://www.linkedin.com/in/shahriar-karim-saurov-53a6ba4b/" className="icon i-linkedin">
-                        <LinkedInIcon />
-                    </a>
-
-                    <a href="https://github.com/ShahSau" className="icon i-github">
-                        <GithubIcon />
-                    </a>
-
-                    <a href="https://twitter.com/saurov_shahriar" className="icon ">
-                        <TwitterIcon />
-                    </a>
-                </div>
-
-                </motion.div>
-            </div>
-            
-        </HomePageStyled>
-        </motion.div> 
-        
-    )
+          </motion.div>
+        </div>
+      </HomePageStyled>
+    </motion.div>
+  );
 }
 
 const HomePageStyled = styled.header`

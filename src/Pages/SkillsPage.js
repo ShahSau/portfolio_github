@@ -1,51 +1,48 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 import styled from 'styled-components';
 import Title from '../Components/Title';
 import skills from '../data/skills';
-import {MainLayout, InnerLayout} from '../styles/Layouts';
+import { MainLayout, InnerLayout } from '../styles/Layouts';
 // import {motion} from "framer-motion";
 
 function SkillPage() {
   return (
     <MainLayout>
-        <SkillsStyled>
+      <SkillsStyled>
         {/* <motion.div
         initial={{opacity: 0,x:-250 , y:0}}
         animate={{opacity: 1,x:1, y:1}}
         exit={{opacity: 1,y:0, x:250}}
         transition={{ duration: 2.5}}
     > */}
-        <Title title={'Skills'} span={'Skills'} />
-            <InnerLayout className={'skill'}>
-                {
-                    skills.map((skill)=>{
-                        
-                        return <div key={skill.id} className={'skill-item'}>
-                           
-                            <div className="title">
-                                    {skill.title}
-                                    <div className="image">
-                      
-                                        {skill.image.map(img =>{ 
-                                            return (
-                                            <img key={Math.random()}src= {img} alt={skill.id}/>
-                                        
-                                            )
-                                             })}
+        <Title title="Skills" span="Skills" />
+        <InnerLayout className="skill">
+          {
+                    skills.map((skill) => (
+                      <div key={skill.id} className="skill-item">
+                        <div className="title">
+                          {skill.title}
+                          <div className="image">
 
-                                    </div>
-                                
-                            </div>
-                            
+                            {skill.image.map((img) => (
+                              <img key={Math.random()} src={img} alt={skill.id} />
+
+                            ))}
+
+                          </div>
+
                         </div>
-                    
-                    })
+
+                      </div>
+                    ))
                 }
-            </InnerLayout>
-            {/* </motion.div> */}
-        </SkillsStyled>
+        </InnerLayout>
+        {/* </motion.div> */}
+      </SkillsStyled>
     </MainLayout>
-)
+  );
 }
 const SkillsStyled = styled.div`
     .skill{
@@ -109,4 +106,4 @@ const SkillsStyled = styled.div`
     }
 `;
 
-export default SkillPage
+export default SkillPage;

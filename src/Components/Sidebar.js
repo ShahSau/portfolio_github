@@ -1,15 +1,17 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 import Navigation from './Navigation';
 
+function Sidebar({ navToggle }) {
+  return (
+    <SidebarStyled className={`${navToggle ? 'nav-toggle' : ''}`}>
+      <Navigation />
+    </SidebarStyled>
 
-function Sidebar({navToggle}) {
-    return (
-        <SidebarStyled className={`${navToggle ? 'nav-toggle' : ''}`}>
-            <Navigation />
-        </SidebarStyled>
-
-    )
+  );
 }
 
 const SidebarStyled = styled.div`

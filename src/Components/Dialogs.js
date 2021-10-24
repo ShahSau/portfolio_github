@@ -1,3 +1,6 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -23,8 +26,11 @@ const styles = (theme) => ({
 });
 
 const DialogTitle = withStyles(styles)((props) => {
-  const { children, classes, onClose, ...other } = props;
+  const {
+    children, classes, onClose, ...other
+  } = props;
   return (
+    // eslint-disable-next-line react/jsx-props-no-spreading
     <MuiDialogTitle disableTypography className={classes.root} {...other}>
       <Typography variant="h6">{children}</Typography>
       {onClose ? (
@@ -49,9 +55,8 @@ const DialogActions = withStyles((theme) => ({
   },
 }))(MuiDialogActions);
 
-export default function CustomizedDialogs({handleClickOpen,handleClose, open}) {
- 
-
+// eslint-disable-next-line no-unused-vars
+export default function CustomizedDialogs({ handleClickOpen, handleClose, open }) {
   return (
     <div>
       {/* <Button variant="outlined" color="primary" onClick={handleClickOpen}>
@@ -63,10 +68,10 @@ export default function CustomizedDialogs({handleClickOpen,handleClose, open}) {
         </DialogTitle>
         <DialogContent dividers>
           <Typography gutterBottom>
-          Thank you for your enquiry.
-          </Typography> 
+            Thank you for your enquiry.
+          </Typography>
           <Typography gutterBottom>
-          Your message has been sent successfully.
+            Your message has been sent successfully.
           </Typography>
           <Typography gutterBottom>
             I will get back to you in next 24 hours. Have a good day!

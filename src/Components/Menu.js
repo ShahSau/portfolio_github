@@ -1,64 +1,68 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 import GitHub from '@material-ui/icons/GitHub';
 import LanguageIcon from '@material-ui/icons/Language';
 
+function Menu({ menuItem }) {
+  return (
+    <MenuItemStyled>
+      {
+                menuItem.map((item) => (
+                  <div className="grid-item" key={item.id}>
 
-function Menu({menuItem}) {
-    return (
-        <MenuItemStyled >
-            {
-                menuItem.map((item)=>{
-                    return <div className="grid-item" key={item.id}>
-                        
+                    <div className="portfolio-content">
 
-                        <div className="portfolio-content">
-                            
-                                <div className="">
-                                <img src={item.image} alt={item.id}/>
-                                </div>
-                                <div className="details">
-                                
-                                <div className='inline'>
-                                <p>Details:{item.text}</p>
-                                
+                      <div className="">
+                        <img src={item.image} alt={item.id} />
+                      </div>
+                      <div className="details">
+
+                        <div className="inline">
+                          <p>
+                            Details:
+                            {item.text}
+                          </p>
+
                                 &nbsp;
-                                <div className='inline'>Technologies: {item.technologies.map((item)=>{
-                                    return <p>{item} </p>
-                                })}
+                          <div className="inline">
+                            Technologies:
+                            {item.technologies.map((item2) => (
+                              <p>
+                                {item2}
+                                {' '}
+                              </p>
+                            ))}
                                 &nbsp;
-                                <li>
-                                        <a href={item.link1} target='_blank' rel="noreferrer">
-                                            <GitHub />
-                                        </a>
-                                    </li>
-                                    {item.link2 !== '' && (
-                                    <li>
-                                        <a href={item.link2} target='_blank' rel="noreferrer" >
-                                            <LanguageIcon />
-                                        </a>
-                                    </li>
-                                    )}
-                                </div>
-                                </div>
-                                
-                            </div>
-                            <div className='box'>
-                            <h6>{item.title}</h6>
-                            
-                            {/* <p>{item.text}</p>
-                            <div className='inline'>Technologies: &nbsp;{item.technologies.map((item)=>{
-                                    return <p>{item}&nbsp;</p>
-                                })}</div> */}
-                            </div>
+                            <li>
+                              <a href={item.link1} target="_blank" rel="noreferrer">
+                                <GitHub />
+                              </a>
+                            </li>
+                            {item.link2 !== '' && (
+                            <li>
+                              <a href={item.link2} target="_blank" rel="noreferrer">
+                                <LanguageIcon />
+                              </a>
+                            </li>
+                            )}
+                          </div>
                         </div>
-                        
-                        {/* </div> */}
+
+                      </div>
+                      <div className="box">
+                        <h6>{item.title}</h6>
+
+                      </div>
                     </div>
-                })
+
+                  </div>
+                ))
             }
-        </MenuItemStyled>
-    )
+    </MenuItemStyled>
+  );
 }
 
 const MenuItemStyled = styled.div`

@@ -1,12 +1,15 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 
-function ReviewItem({text}) {
-    return (
-        <RevivewItemStyled>
-            <p>{text}</p>
-        </RevivewItemStyled>
-    )
+function ReviewItem({ text }) {
+  return (
+    <RevivewItemStyled>
+      <p>{text}</p>
+    </RevivewItemStyled>
+  );
 }
 
 const RevivewItemStyled = styled.div`

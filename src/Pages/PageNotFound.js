@@ -1,20 +1,32 @@
-import React from 'react'
-import { MainLayout} from '../styles/Layouts';
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
+import { MainLayout } from '../styles/Layouts';
+
 function PageNotFound() {
-    return (
-        <MainLayout>
-            <NoPageStyled>
-            <div className="mainbox">
-                <div className="err">4</div>
-                <div className="err1">0</div>
-                <div className="err2">4</div>
-                <div className="msg">Maybe this page moved? Got deleted? Is hiding out in quarantine? 
-                    Never existed in the first place?<p>Let's go <a href="/">home</a> and try from there.</p></div>
-            </div>
-            </NoPageStyled>
-        </MainLayout>
-    )
+  return (
+    <MainLayout>
+      <NoPageStyled>
+        <div className="mainbox">
+          <div className="err">4</div>
+          <div className="err1">0</div>
+          <div className="err2">4</div>
+          <div className="msg">
+            Maybe this page moved? Got deleted? Is hiding out in quarantine?
+            Never existed in the first place?
+            <p>
+              Let &apos;s go
+              {' '}
+              <a href="/">home</a>
+              {' '}
+              and try from there.
+            </p>
+          </div>
+        </div>
+      </NoPageStyled>
+    </MainLayout>
+  );
 }
 
 const NoPageStyled = styled.header`
@@ -78,5 +90,5 @@ const NoPageStyled = styled.header`
   a:hover {
     text-decoration: underline;
   }
-`
-export default PageNotFound
+`;
+export default PageNotFound;

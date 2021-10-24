@@ -1,39 +1,46 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import avatar from '../img/pic.jpg';
 
 function Navigation() {
-    return (
-        <NavigationStyled>
-            <div className="avatar">
-                <img src={avatar} alt=""/>
-            </div>
-            <ul className="nav-items">
-                <li className="nav-item">
-                    <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/skills" activeClassName="active-class" exact>Skills</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
-                </li>
-            </ul>
-            <footer className="footer">
-                <p>@2021 <b>Shahriar</b></p>
-            </footer>
-        </NavigationStyled>
-    )
+  return (
+    <NavigationStyled>
+      <div className="avatar">
+        <img src={avatar} alt="" />
+      </div>
+      <ul className="nav-items">
+        <li className="nav-item">
+          <NavLink to="/" activeClassName="active-class" exact>Home</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/about" activeClassName="active-class" exact>About</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/resume" activeClassName="active-class" exact>Resume</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/portfolios" activeClassName="active-class" exact>Portfolios</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/skills" activeClassName="active-class" exact>Skills</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/contact" activeClassName="active-class" exact>Contact</NavLink>
+        </li>
+      </ul>
+      <footer className="footer">
+        <p>
+          @2021
+          {' '}
+          <b>Shahriar</b>
+        </p>
+      </footer>
+    </NavigationStyled>
+  );
 }
 
 const NavigationStyled = styled.nav`

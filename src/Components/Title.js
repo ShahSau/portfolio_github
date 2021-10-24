@@ -1,12 +1,19 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 
-function Title({title, span}) {
-    return (
-        <TitleStyled>
-            <h2>{title} <b><span>{span}</span></b></h2>
-        </TitleStyled>
-    )
+function Title({ title, span }) {
+  return (
+    <TitleStyled>
+      <h2>
+        {title}
+        {' '}
+        <b><span>{span}</span></b>
+      </h2>
+    </TitleStyled>
+  );
 }
 
 const TitleStyled = styled.div`

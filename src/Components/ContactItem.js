@@ -1,31 +1,34 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 import styled from 'styled-components';
 
-
-function ContactItem({title, icon, cont1, cont2=''}) {
-    return (
-        <ContactItemStyled>
-            {/* <div className="before">
+function ContactItem({
+  title, icon, cont1, cont2 = '',
+}) {
+  return (
+    <ContactItemStyled>
+      {/* <div className="before">
                 {
                     loc
                 }
 
-
             </div> */}
-            <div className="before">
-                {
+      <div className="before">
+        {
                     icon
                 }
-            </div>
-            
-            <div className="right-content">
-                <h6>{title}</h6>
-                <p>{cont1}</p>
-                {cont2 !== '' && <p>{cont2}</p>}
-                
-            </div>
-        </ContactItemStyled>
-    )
+      </div>
+
+      <div className="right-content">
+        <h6>{title}</h6>
+        <p>{cont1}</p>
+        {cont2 !== '' && <p>{cont2}</p>}
+
+      </div>
+    </ContactItemStyled>
+  );
 }
 
 const ContactItemStyled = styled.div`

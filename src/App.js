@@ -1,30 +1,32 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import { useState, useEffect } from 'react';
 
-import { useState } from "react";
-import { useEffect } from "react";
-import Sidebar from "./Components/Sidebar";
 import styled from 'styled-components';
-import HomePage from "./Pages/HomePage";
+// import Brightness4Icon from '@material-ui/icons/Brightness4';
+import MenuIcon from '@material-ui/icons/Menu';
+import { Route, useLocation, Switch as Switching } from 'react-router';
+import { IconButton } from '@material-ui/core';
+import ClearIcon from '@material-ui/icons/Clear';
+import { AnimatePresence } from 'framer-motion';
+import Sidebar from './Components/Sidebar';
+import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
 import ResumePage from './Pages/ResumePage';
 import PortfoliosPage from './Pages/PortfoliosPage';
 import ContactPage from './Pages/ContactPage';
-import SkillsPage from './Pages/SkillsPage'
-import PageNotFound from './Pages/PageNotFound'
-import Brightness4Icon from '@material-ui/icons/Brightness4';
-import MenuIcon from '@material-ui/icons/Menu';
-import { Route, useLocation, Switch as Switching } from "react-router";
-import Switch from '@material-ui/core/Switch'
-import { IconButton } from "@material-ui/core";
-import ClearIcon from '@material-ui/icons/Clear';
+import SkillsPage from './Pages/SkillsPage';
+import PageNotFound from './Pages/PageNotFound';
+// import Switch from '@material-ui/core/Switch'
 
-import { AnimatePresence} from "framer-motion";
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [theme, setTheme] = useState('dark-theme');
-  const [checked, setChecked] = useState(false);
+  // const [checked, setChecked] = useState(false);
   const [navToggle, setNavToggle] = useState(false);
-  const location = useLocation()
+  const location = useLocation();
 
-  useEffect(()=>{
+  useEffect(() => {
     document.documentElement.className = theme;
   }, [theme]);
 
@@ -40,9 +42,9 @@ function App() {
 
   return (
     <div className="App">
-        <Sidebar navToggle={navToggle} />
+      <Sidebar navToggle={navToggle} />
 
-        {/* <div className="theme">
+      {/* <div className="theme">
           <div className="light-dark-mode">
               <div className="left-content">
                 <Brightness4Icon />
@@ -54,27 +56,26 @@ function App() {
                   inputProps={{ 'aria-label': '' }}
                   size="medium"
                   onClick={themeToggler}
-                  
                 />
               </div>
             </div>
         </div> */}
-        {!navToggle && (
-          <div className="ham-burger-menu">
-          <IconButton onClick={() => setNavToggle(true)}>
-              <MenuIcon />
-          </IconButton>
-        </div>
-        )}
-         {navToggle && (
-          <div className="ham-burger-menu cross">
-          <IconButton onClick={() => setNavToggle(false)}>
-              <ClearIcon />
-          </IconButton>
-        </div>
-        )}
+      {!navToggle && (
+      <div className="ham-burger-menu">
+        <IconButton onClick={() => setNavToggle(true)}>
+          <MenuIcon />
+        </IconButton>
+      </div>
+      )}
+      {navToggle && (
+      <div className="ham-burger-menu cross">
+        <IconButton onClick={() => setNavToggle(false)}>
+          <ClearIcon />
+        </IconButton>
+      </div>
+      )}
 
-        <AnimatePresence exitBeforeEnter initial={false}>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <MainContentStyled>
           {/* <div className="lines">
             <div className="line-1"></div>
@@ -82,8 +83,6 @@ function App() {
             <div className="line-3"></div>
             <div className="line-4"></div>
           </div> */}
-
-          
           <Switching location={location} key={Location.pathname}>
             <Route path="/" exact>
               <HomePage />
@@ -106,12 +105,9 @@ function App() {
             <Route>
               <PageNotFound />
             </Route>
-            
           </Switching>
-          
-
         </MainContentStyled>
-        </AnimatePresence>
+      </AnimatePresence>
     </div>
   );
 }

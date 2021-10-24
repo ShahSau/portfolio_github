@@ -1,16 +1,19 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+import React from 'react';
 import styled from 'styled-components';
 
-function ServiceCard({image, title, paragraph}) {
-    return (
-        <ServiceCardStyled >
-            <div className="container">
-                <img src={image} alt=""/>
-                <h4>{title}</h4>
-                <p>{paragraph}</p>
-            </div>
-        </ServiceCardStyled >
-    )
+function ServiceCard({ image, title, paragraph }) {
+  return (
+    <ServiceCardStyled>
+      <div className="container">
+        <img src={image} alt="" />
+        <h4>{title}</h4>
+        <p>{paragraph}</p>
+      </div>
+    </ServiceCardStyled>
+  );
 }
 
 const ServiceCardStyled = styled.div`
