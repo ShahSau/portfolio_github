@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/react-in-jsx-scope */
 // import p  from "../img/skills/python.jpeg"
 const skills = [
   {

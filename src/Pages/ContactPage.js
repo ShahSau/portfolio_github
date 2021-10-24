@@ -1,7 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/jsx-no-bind */
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import PhoneIcon from '@material-ui/icons/Phone';

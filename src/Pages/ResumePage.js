@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 import { MainLayout } from '../styles/Layouts';
 import Resume from '../Components/Resume';

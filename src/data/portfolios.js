@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/react-in-jsx-scope */
 import img0 from '../img/portImages/0.png';
 import img1 from '../img/portImages/1.png';
 import img2 from '../img/portImages/2.png';

@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/react-in-jsx-scope */
 import React from 'react';
 import styled from 'styled-components';
 
@@ -9,7 +6,7 @@ function Button({ filter, button }) {
     <ButtonsStyled>
       {
                 button.map((but, i) => (
-                  // eslint-disable-next-line react/no-array-index-key
+                 
                   <ButtonStyled key={i} onClick={() => filter(but)}>
 
                     {but}

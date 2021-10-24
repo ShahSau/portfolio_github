@@ -1,7 +1,4 @@
-/* eslint-disable react/jsx-filename-extension */
-/* eslint-disable react/react-in-jsx-scope */
 import { useState, useEffect } from 'react';
-
 import styled from 'styled-components';
 // import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
