@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Title from '../Components/Title';
 import skills from '../data/skills';
 import {MainLayout, InnerLayout} from '../styles/Layouts';
-import {motion} from "framer-motion";
+// import {motion} from "framer-motion";
 
 function SkillPage() {
   return (

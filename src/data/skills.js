@@ -1,5 +1,5 @@
 
-import p  from "../img/skills/python.jpeg"
+// import p  from "../img/skills/python.jpeg"
 const skills = [
     {
         id: 0,
@@ -22,7 +22,7 @@ const skills = [
                 "https://i.ibb.co/6DnrchH/file-type-typescript-official-icon-130107.png",
                 "https://i.ibb.co/XyhFHHR/file-type-vue-icon-130078.png",
                 "https://i.ibb.co/fQbMmqY/bootstrap-plain-wordmark-logo-icon-146620.png",
-                "https://material-ui.com/static/logo_raw.svg",
+                "https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png",
             ]
     },
     {

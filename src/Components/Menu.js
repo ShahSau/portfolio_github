@@ -15,7 +15,7 @@ function Menu({menuItem}) {
                         <div className="portfolio-content">
                             
                                 <div className="">
-                                <img src={item.image} alt=""/>
+                                <img src={item.image} alt={item.id}/>
                                 </div>
                                 <div className="details">
                                 
