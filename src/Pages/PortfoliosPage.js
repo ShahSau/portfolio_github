@@ -1,21 +1,20 @@
-import React, { useState } from 'react';
-import { MainLayout, InnerLayout } from '../styles/Layouts';
-import Title from '../Components/Title';
-import portfolios from '../data/portfolios';
+import React, { useState } from "react";
+import { MainLayout, InnerLayout } from "../styles/Layouts";
+import Title from "../Components/Title";
+import portfolios from "../data/portfolios";
 // import Menu from '../Components/Menu';
-import Button from '../Components/Button';
+import Button from "../Components/Button";
 // import {motion} from "framer-motion";
-import Menu2 from '../Components/Menu2';
+import Menu2 from "../Components/Menu2";
 
-const allButtons = ['All', ...new Set(portfolios.map((item) => item.category))];
+const allButtons = ["All", ...new Set(portfolios.map((item) => item.category))];
 
 function PortfoliosPage() {
   const [menuItem, setMenuItems] = useState(portfolios);
-  // eslint-disable-next-line no-unused-vars
   const [button, setButtons] = useState(allButtons);
 
-  const filter = (button2) => {
-    if (button2 === 'All') {
+  const filter = (button) => {
+    if (button === "All") {
       setMenuItems(portfolios);
       return;
     }
@@ -24,12 +23,12 @@ function PortfoliosPage() {
     setMenuItems(filteredData);
   };
   return (
-  //     <motion.div
-  //     initial={{opacity: 0,y:250}}
-  //     animate={{opacity: 1,y:1}}
-  //     exit={{opacity: 1,y:0}}
-  //     transition={{ duration: 3}}
-  // >
+    //     <motion.div
+    //     initial={{opacity: 0,y:250}}
+    //     animate={{opacity: 1,y:1}}
+    //     exit={{opacity: 1,y:0}}
+    //     transition={{ duration: 3}}
+    // >
     <MainLayout>
       <Title title="Portfolios" span="portfolios" />
       <InnerLayout>
