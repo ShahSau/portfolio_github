@@ -1,13 +1,20 @@
 import python  from "../img/skills/python.png"
+import js from '../img/skills/js.png'
+import c from '../img/skills/c.png'
+import Cs from '../img/skills/CSharp.png'
+import R from '../img/skills/R2.png'
+
+import docker from '../img/skills/docker.png'
 const skills = [
   {
     id: 0,
     title: 'Languages',
-    image: ['https://i.ibb.co/L06xB8w/file-type-js-official-icon-130509.png',
+    image: [
       python,
-      'https://i.ibb.co/NSLB9nZ/c.png',
-      'https://i.ibb.co/gwphSCd/csharp-original-logo-icon-146578.png',
-      'https://i.ibb.co/RP4PGDt/file-type-r-icon-130212.png',
+      js,
+      Cs,
+      c,
+      R,
 
     ],
   },
@@ -75,7 +82,7 @@ const skills = [
       'https://i.ibb.co/KWL8Y3V/Tableau-Logo.png',
       'https://i.ibb.co/KxLqPrz/heroku-logo-1.png',
       'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png',
-      'https://i.ibb.co/L58nwV1/docker.png',
+      docker,
 
     ],
   },
