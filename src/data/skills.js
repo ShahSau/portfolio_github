@@ -1,10 +1,10 @@
-// import p  from "../img/skills/python.jpeg"
+import python  from "../img/skills/python.png"
 const skills = [
   {
     id: 0,
     title: 'Languages',
     image: ['https://i.ibb.co/L06xB8w/file-type-js-official-icon-130509.png',
-      'https://i0.wp.com/evomics.org/wp-content/uploads/2011/09/python-logo-glassy.png',
+      python,
       'https://i.ibb.co/NSLB9nZ/c.png',
       'https://i.ibb.co/gwphSCd/csharp-original-logo-icon-146578.png',
       'https://i.ibb.co/RP4PGDt/file-type-r-icon-130212.png',
