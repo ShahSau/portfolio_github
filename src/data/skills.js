@@ -4,7 +4,6 @@ import c from '../img/skills/c.png'
 import Cs from '../img/skills/CSharp.png'
 import R from '../img/skills/R2.png'
 
-
 //froentend
 import html from '../img/skills/html.png'
 import css from '../img/skills/css.png'
@@ -33,7 +32,26 @@ import aws from '../img/skills/aws.png'
 import heroku from '../img/skills/heroku.png'
 import netlify from '../img/skills/netlify.png'
 
+//data Science
+import sklearn from '../img/skills/sklearn.png'
+import opencv from '../img/skills/opencv.png'
+import numpy from '../img/skills/numpy.png'
+import pandas from '../img/skills/pandas.png'
+import bokeh from '../img/skills/bokeh.svg'
+import tidyverse from '../img/skills/tidyverse.png'
+import plotly from '../img/skills/plotly.svg'
 
+//database
+import postgre from '../img/skills/postgre.png'
+import lite from '../img/skills/lite.png'
+import mongo from '../img/skills/mongo.png'
+import firebase from '../img/skills/firebase.png'
+
+//other
+import figma from '../img/skills/figma.png'
+import native from '../img/skills/native.png'
+import linux from '../img/skills/linux.webp'
+import tableau from '../img/skills/Tableau.png'
 import docker from '../img/skills/docker.png'
 const skills = [
   {
@@ -94,34 +112,33 @@ const skills = [
     id: 4,
     title: 'Machine learning & Data Science',
     image: [
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/260px-Scikit_learn_logo_big.svg.png',
-      'https://opencv.org/wp-content/uploads/2020/07/cropped-OpenCV_logo_white_600x.png',
-      'https://spark.apache.org/images/spark-logo-trademark.png', 
-      'https://user-images.githubusercontent.com/1217238/65354639-dd928f80-dba4-11e9-833b-bc3e8c6a737d.png',
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Pandas_logo.svg/450px-Pandas_logo.svg.png',
-      'https://static.bokeh.org/logos/logotype.svg',
-      'https://images.prismic.io/plotly-marketing-website/bd1f702a-b623-48ab-a459-3ee92a7499b4_logo-plotly.svg',
-      'https://tidyverse.tidyverse.org/articles/tidyverse-logo.png',
+      sklearn,
+      opencv,
+      numpy,
+      pandas,
+      bokeh,
+      plotly,
+      tidyverse, 
     ],
   },
   {
     id: 5,
     title: 'Database',
-    image: ['https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/200px-Postgresql_elephant.svg.png',
-      'https://docs.mongodb.com/images/mongodb-logo.png',
-      'https://i.ibb.co/KygzfYg/no-SQL-removebg-preview.png',
-
+    image: [
+      postgre,
+      lite,
+      mongo,
+      firebase
     ],
   },
   {
     id: 6,
     title: 'Others',
     image: [
-////figma
-///react native
-      'https://i.ibb.co/KWL8Y3V/Tableau-Logo.png',
-      
-      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/150px-Tux.svg.png',
+      figma,
+      native,
+      tableau,
+      linux,
       docker,
 
     ],
