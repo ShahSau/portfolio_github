@@ -68,7 +68,7 @@ const skills = [
   },
   {
     id: 1,
-    title: 'Froentend Technologies',
+    title: 'Frontend Technologies',
     image: [
     html,
     css,
