@@ -53,14 +53,16 @@ const SkillsStyled = styled.div`
             grid-template-columns: repeat(1, 1fr);
         }
         .skill-item{
-            background: var(--background-dark-grey);
+          // background: linear-gradient(45deg ,#708090, #696969, #A9A9A9);
+         background: #4b4d54;
             padding: 1rem 1rem;
             cursor: pointer;
+           
             &:hover{
-                transform: rotate(0deg) scale(1.07);
+                transform: rotate(0deg) scale(1.02);
                 transition: all .4s ease-in-out;
-                background: linear-gradient(45deg ,#708090, #696969, #A9A9A9);
-                // backgroundImage: 'linear-gradient(45deg, #FFC312, #EE5A24, #00a8ff)',
+                
+                
                 
                 .title{
                     color: #171717;
@@ -95,7 +97,7 @@ const SkillsStyled = styled.div`
         .title{
                 font-size: 1.8rem;
                 padding: 2rem 0;
-                color: var(--white-color);
+                color: #171717;;
                 cursor: pointer;
                 transition: all .4s ease-in-out;
                 

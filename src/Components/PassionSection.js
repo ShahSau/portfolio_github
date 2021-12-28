@@ -7,7 +7,7 @@ import ServiceCard from './ServiceCard';
 import design from '../img/design.svg';
 import intelligence from '../img/intelligence.svg';
 
-function ServicesSection() {
+function PassionSection() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 250 }}
@@ -16,7 +16,7 @@ function ServicesSection() {
       transition={{ delay: 1, duration: 1 }}
     >
       <InnerLayout>
-        <ServicesSectionStyled>
+        <PassionSectionStyled>
           <Title title="Passion" span="Passion" />
           <div className="services">
             <motion.div
@@ -27,7 +27,7 @@ function ServicesSection() {
             >
               <ServiceCard
                 image={design}
-                title="Web Development"
+                title="FrontEnd"
                 paragraph="Web development gives me the opportunity to express myself creatively on the internet. And I love to see my imagination come to life."
               />
             </motion.div>
@@ -40,7 +40,7 @@ function ServicesSection() {
             >
               <ServiceCard
                 image={intelligence}
-                title="Image processing"
+                title="BackEnd"
                 paragraph="The human visual system does not perceive the world in the same manner as digital detectors and I love to create link between them."
               />
             </motion.div>
@@ -54,19 +54,19 @@ function ServicesSection() {
               >
                 <ServiceCard
                   image={design}
-                  title="Data analysis"
+                  title="FullStack"
                   paragraph="I love making sense of unorganized, messy data and visualizing my findings for better utilization of data."
                 />
               </motion.div>
             </div>
           </div>
-        </ServicesSectionStyled>
+        </PassionSectionStyled>
       </InnerLayout>
     </motion.div>
   );
 }
 
-const ServicesSectionStyled = styled.section`
+const PassionSectionStyled = styled.section`
     .services{
         margin-top: 5rem;
         display: grid;
@@ -86,4 +86,4 @@ const ServicesSectionStyled = styled.section`
 
 `;
 
-export default ServicesSection;
+export default PassionSection;

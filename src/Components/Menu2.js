@@ -100,7 +100,7 @@ const MenuItemStyled = styled.div`
       flexGrow: 1;
       background-color: #191D2B;
       &:hover{
-        transform: scale3d(1.05, 1.05, 1);
+        transform: scale3d(1.02, 1.02, 1);
         transition: all .4s ease-in-out;
         boxShadow: 3px 3px #fff; 
         .card{
@@ -123,10 +123,10 @@ const MenuItemStyled = styled.div`
       flex-direction: column;
       justify-content: space-between;
       
-      &:hover{
-          background-color: #778899;
-          color:#000;
-       },
+      // &:hover{
+      //     background-color: #778899;
+      //     color:#000;
+      //  },
     },  
     
    

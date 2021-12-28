@@ -18,7 +18,7 @@ function Particle() {
               },
             },
             color: {
-              value: '#636e72',
+              value: '#0f90bf',  //   #636e72
             },
             shape: {
               type: 'circle',
@@ -36,7 +36,7 @@ function Particle() {
               width: 2,
               shadow: {
                 enable: true,
-                color: '#e74c3c',
+                color: '#000', //#e74c3c
                 blur: 5,
               },
             },

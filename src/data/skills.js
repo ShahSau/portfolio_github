@@ -8,7 +8,7 @@ import R from '../img/skills/R2.png'
 import html from '../img/skills/html.png'
 import css from '../img/skills/css.png'
 import react from '../img/skills/react.png'
-import TS from '../img/skills/TS.png'
+import TSc from '../img/skills/TS.png'
 import vue from '../img/skills/vue.png'
 import redux from '../img/skills/redux.svg'
 import boot from '../img/skills/boot.png'
@@ -30,7 +30,7 @@ import cypress from '../img/skills/cypress.png'
 import mocha from '../img/skills/mocha.png'
 import aws from '../img/skills/aws.png'
 import heroku from '../img/skills/heroku.png'
-import netlify from '../img/skills/netlify.png'
+import netlify from '../img/skills/netlify2.png'
 
 //data Science
 import sklearn from '../img/skills/sklearn.png'
@@ -63,7 +63,7 @@ const skills = [
       Cs,
       c,
       R,
-
+      
     ],
   },
   {
@@ -74,7 +74,7 @@ const skills = [
     css,
     react,
     redux,
-    TS,
+    TSc,
     vue,
     boot,
     material,

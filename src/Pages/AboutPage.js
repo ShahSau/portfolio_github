@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import ImageSection from '../Components/ImageSection';
 import Title from '../Components/Title';
 import { MainLayout } from '../styles/Layouts';
-import ServicesSection from '../Components/ServicesSection';
+
+import PassionSection from '../Components/PassionSection';
 
 function AboutPage() {
   return (
@@ -18,7 +19,7 @@ function AboutPage() {
         <AboutStyled>
           <Title title="About Me" span="About Me" />
           <ImageSection />
-          <ServicesSection />
+          <PassionSection />
         </AboutStyled>
       </MainLayout>
     </motion.div>
