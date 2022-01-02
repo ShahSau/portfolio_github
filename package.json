@@ -34,7 +34,8 @@
     "eject": "react-scripts eject"
   },
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "8.x"
 },
   "browserslist": {
     "production": [
