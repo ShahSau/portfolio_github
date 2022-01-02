@@ -34,26 +34,26 @@ const ResumeItemStyled = styled.div`
     &:not(:last-child){
         padding-bottom: 3rem;
     }
-    .left-content{
-        width: 50%;
-        padding-left: 20px;
-        position: relative;
-        &::before{
-            content: "";
-            position: absolute;
-            left: -10px;
-            top: 5px;
-            height: 15px;
-            width: 15px;
-            border-radius: 50%;
-            border: 2px solid var(--border-color);
-            background-color: var(--background-dark-color);
-        }
-        p{
-            display: inline-block;
-            font-weight:lighter;
-        }
-    }
+    // .left-content{
+    //     width: 50%;
+    //     padding-left: 20px;
+    //     position: relative;
+    //     &::before{
+    //         content: "";
+    //         position: absolute;
+    //         left: -10px;
+    //         top: 5px;
+    //         height: 15px;
+    //         width: 15px;
+    //         border-radius: 50%;
+    //         border: 2px solid var(--border-color);
+    //         background-color: var(--background-dark-color);
+    //     }
+    //     p{
+    //         display: inline-block;
+    //         font-weight:lighter;
+    //     }
+    // }
     .right-content{
         padding-left: 5rem;
         position: relative;
@@ -63,9 +63,9 @@ const ResumeItemStyled = styled.div`
         //     position: absolute;
         //     left: 0px;
         //     top: 15px;
-        //     height: 2px;
+        //     height: 20px;
         //     width: 3rem;
-        //     background-color: #fff;
+        //     background-color: #000;
         // }
         &::before{
             content: "";

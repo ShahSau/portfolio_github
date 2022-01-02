@@ -16,16 +16,19 @@ function AboutPage() {
     //   transition={{ duration: 2 }}
     // >
       <MainLayout>
-        {/* <AboutStyled> */}
+        <AboutStyled>
           <Title title="About Me" span="About Me" />
           <ImageSection />
           <Resume />
-        {/* </AboutStyled> */}
+        </AboutStyled>
       </MainLayout>
     // </motion.div>
   );
 }
 
+const AboutStyled = styled.section`
+ overflow-x:hidden;
 
+`
 
 export default AboutPage;
