@@ -3,6 +3,7 @@ import js from '../img/skills/js.png'
 import c from '../img/skills/c.png'
 import Cs from '../img/skills/CSharp.png'
 import R from '../img/skills/R2.png'
+import { DiJavascript1 } from "react-icons/di";
 
 //froentend
 import html from '../img/skills/html.png'
@@ -60,6 +61,7 @@ const skills = [
     image: [
       python,
       js,
+      
       Cs,
       c,
       R,

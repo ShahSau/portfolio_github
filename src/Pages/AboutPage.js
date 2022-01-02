@@ -19,7 +19,7 @@ function AboutPage() {
         <AboutStyled>
           <Title title="About Me" span="About Me" />
           <ImageSection />
-          <PassionSection />
+          {/* <PassionSection /> */}
         </AboutStyled>
       </MainLayout>
     </motion.div>

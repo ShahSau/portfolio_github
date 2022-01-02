@@ -9,12 +9,12 @@ import Particle from '../Components/Particle';
 
 function HomePage() {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 250 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100 }}
-      transition={{ delay: 0.0, duration: 1.5 }}
-    >
+    // <motion.div
+    //   initial={{ opacity: 0, x: 250 }}
+    //   animate={{ opacity: 1, x: 0 }}
+    //   exit={{ opacity: 0, x: -100 }}
+    //   transition={{ delay: 0.0, duration: 1.5 }}
+    // >
       <HomePageStyled>
         <div className="particle-con">
           <Particle />
@@ -42,12 +42,12 @@ function HomePage() {
             />
           </p>
 
-          <motion.div
+          {/* <motion.div
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             exit={{ scaleY: 0 }}
             transition={{ delay: 1.5, duration: 1.75 }}
-          >
+          > */}
 
             <div className="icons">
               <a href="https://www.linkedin.com/in/shahriar-karim-saurov-53a6ba4b/" className="icon i-linkedin">
@@ -61,10 +61,10 @@ function HomePage() {
               </a>
             </div>
 
-          </motion.div>
+          {/* </motion.div> */}
         </div>
       </HomePageStyled>
-    </motion.div>
+    // </motion.div>
   );
 }
 
