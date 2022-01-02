@@ -9,7 +9,6 @@ import { AnimatePresence } from 'framer-motion';
 import Sidebar from './Components/Sidebar';
 import HomePage from './Pages/HomePage';
 import AboutPage from './Pages/AboutPage';
-import ResumePage from './Pages/ResumePage';
 import PortfoliosPage from './Pages/PortfoliosPage';
 import ContactPage from './Pages/ContactPage';
 import SkillsPage from './Pages/SkillsPage';
@@ -87,9 +86,9 @@ function App() {
             <Route path="/about" exact>
               <AboutPage />
             </Route>
-            <Route path="/resume" exact>
+            {/* <Route path="/resume" exact>
               <ResumePage />
-            </Route>
+            </Route> */}
             <Route path="/portfolios" exact>
               <PortfoliosPage />
             </Route>

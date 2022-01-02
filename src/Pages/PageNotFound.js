@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { MainLayout } from '../styles/Layouts';
-
+import { Link } from "react-router-dom";
 function PageNotFound() {
   return (
     <MainLayout>
@@ -16,7 +16,10 @@ function PageNotFound() {
             <p>
               Let &apos;s go
               {' '}
-              <a href="/">home</a>
+              <Link to="/">
+                Home
+              </Link>
+              
               {' '}
               and try from there.
             </p>

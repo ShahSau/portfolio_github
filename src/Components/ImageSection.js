@@ -10,18 +10,16 @@ function ImageSection() {
             </div> */}
       <div className="right-content">
         <h4>
-          Hi there, <span>👋 </span>
+          Hi there,<span>👋</span>
         </h4>
         <p className="paragraph">
           Merging my passion for usability and technology with technical
-          knowledge, I love to create cool digital experiences using robust
-          cutting-edge technology. My goal is to create smooth digital
-          experiences by writing clean and efficient codes that are easy to
-          maintain. I have knowledge and experience in building web apps using
-          technologies including but not limited to Javascript, React, Node,
-          Django, Redux, Typescript, MongoDb, PostgreSql. I am highly organized,
-          results-oriented, ambitious, adventurous, assiduous , and able to work
-          in a team or by myself.
+          knowledge, I love to create smooth digital experiences using
+          cutting-edge technology. Using MERN stack and other robust
+          technologies like Typescript, Django, PostgreSQL, my goal is to build
+          websites of the highest standard, by writing clean, efficient, and
+          easily maintainable codes. My knowledge, paired with my passion for
+          Software development can make me a necessary addition to every team.
         </p>
 
         <PrimaryButton title="My work" />

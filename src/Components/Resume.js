@@ -23,7 +23,7 @@ function Resume() {
   });
   return (
     <ResumeStyled>
-      <Title title="Resume" span="resume" />
+      {/* <Title title="Resume" span="resume" /> */}
       <InnerLayout>
         {/* /* work experience */}
         <div className="small-title">

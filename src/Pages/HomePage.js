@@ -53,6 +53,7 @@ function HomePage() {
               <a href="https://www.linkedin.com/in/shahriar-karim-saurov-53a6ba4b/" className="icon i-linkedin">
                 <LinkedInIcon />
               </a>
+              
               <a href="https://github.com/ShahSau" className="icon i-github">
                 <GithubIcon />
               </a>
