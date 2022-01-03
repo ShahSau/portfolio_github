@@ -52,7 +52,7 @@ import firebase from '../img/skills/firebase.png'
 import figma from '../img/skills/figma.png'
 import native from '../img/skills/native.png'
 import linux from '../img/skills/linux.webp'
-import tableau from '../img/skills/tableau.png'
+// import tableau from '../img/skills/tableau.png'
 import docker from '../img/skills/docker.png'
 const skills = [
   {
@@ -138,7 +138,7 @@ const skills = [
     image: [
       figma,
       native,
-      tableau,
+      // tableau,
       linux,
       docker,
 
