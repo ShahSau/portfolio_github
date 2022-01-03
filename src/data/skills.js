@@ -109,19 +109,19 @@ const skills = [
 
     ],
   },
-  {
-    id: 4,
-    title: 'Machine learning & Data Science',
-    image: [
-      sklearn,
-      opencv,
-      numpy,
-      pandas,
-      bokeh,
-      plotly,
-      tidyverse, 
-    ],
-  },
+  // {
+  //   id: 4,
+  //   title: 'Machine learning & Data Science',
+  //   image: [
+  //     sklearn,
+  //     opencv,
+  //     numpy,
+  //     pandas,
+  //     bokeh,
+  //     plotly,
+  //     tidyverse, 
+  //   ],
+  // },
   {
     id: 5,
     title: 'Database',

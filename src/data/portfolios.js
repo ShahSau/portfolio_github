@@ -39,17 +39,6 @@ const portfolios = [
     text: 'A social network website for developers. In this website developers can create account, connect their github account, connect with each other, post, comment on other\'s post. ',
   },
   {
-    id: 1,
-    category: 'Data Analysis',
-    image: img1,
-    link1: 'https://github.com/ShahSau/Python_Data_Science/tree/master/COVID-19%20Analysis',
-    link2: '',
-    link3: '',
-    title: 'COVID-19 Analysis',
-    technologies: ['Pandas,', 'Plotly,', 'Folium,', 'Numpy.'],
-    text: 'Analyzed Covid-19 Pandemic dataset from Johns Hopkins University & THL.',
-  },
-  {
     id: 2,
     category: 'FrontEnd',
     image: img2,
@@ -71,17 +60,7 @@ const portfolios = [
     technologies: ['Flask,', 'Jinja2,', 'SQLAlchemy'],
     text: 'A feddback form, that stores data from the form.',
   },
-  {
-    id: 4,
-    category: 'Data Analysis',
-    image: img4,
-    link1: 'https://github.com/ShahSau/R_Data_Science/blob/master/DataCamp-R/%20RISE%20AND%20FALL%20OF%20PROGRAMMING%20LANGUAGES/Rise%20and%20Fall%20of%20Programming%20Languages%202/notebook.ipynb',
-    link2: '',
-    link3: '',
-    title: 'Trend in Programming Languages',
-    technologies: ['readr,', 'dplyr,', 'tidyverse,', 'ggplot2.'],
-    text: 'Analyzing the trend in programming language from year 2008 to 2018 using data obtained from Stack Overflow.',
-  },
+
   {
     id: 0,
     category: 'Fullstack',
@@ -116,17 +95,6 @@ const portfolios = [
   //         text: 'Data fetched from pokemon API and displayed using react.'
   //     },
   {
-    id: 8,
-    category: 'Data Analysis',
-    image: img8,
-    link1: 'https://github.com/ShahSau/Python_Data_Science/tree/master/Flight%20Delays%20and%20Cancellations',
-    link2: '',
-    link3: '',
-    title: 'Flight Delays and Cancellations',
-    technologies: ['pandas,', 'plotly,', 'seaborn,', 'dask.'],
-    text: 'Explored the flights in different airports in USA in 2015',
-  },
-  {
     id: 9,
     category: 'Backend',
     image: img9,
@@ -147,17 +115,6 @@ const portfolios = [
     title: 'Entertainment Vibe',
     technologies: ['React,', 'React-DOM,', 'material ui,', 'REST API.'],
     text: 'This is an movie search app using data from The Movie Database.',
-  },
-  {
-    id: 12,
-    category: 'Data Analysis',
-    image: img12,
-    link1: 'https://github.com/ShahSau/Python_Data_Science/blob/master/%20House%20Sales%20in%20King%20County%2C%20USA.ipynb',
-    link2: '',
-    link3: '',
-    title: 'House Sales in King County, USA',
-    technologies: ['pandas,', 'seaborn,', 'scikit-learn,', 'numpy.'],
-    text: 'This dataset contains house sale prices for King County in the year 2014 & 2015.',
   },
   {
     id: 13,

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-function PrimaryButton({ title }) {
+function PrimaryButton({ title,linkTo }) {
   return (
     <PrimaryButtonStyled>
-      <Link to="/portfolios">{title}</Link>
+      <Link to={`/${linkTo}`}>{title}</Link>
     </PrimaryButtonStyled>
   );
 }

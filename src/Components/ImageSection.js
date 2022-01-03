@@ -19,7 +19,7 @@ function ImageSection() {
           Software development can make me a necessary addition to every team.
         </p>
 
-        <PrimaryButton title="My work" />
+        <PrimaryButton title="My work" linkTo="portfolios"/>
       </div>
     </ImageSectionStyled>
   );

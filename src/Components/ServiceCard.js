@@ -24,7 +24,7 @@ const ServiceCardStyled = styled.div`
   &:hover {
     border-top: 8px solid var(--primary-color);
     transform: translateY(3px);
-    cursor: pointer;
+
     transform: scaleY(1.05);
   }
   .container {
