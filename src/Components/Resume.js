@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
-import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
-import SchoolIcon from '@material-ui/icons/School';
-import CardMembershipIcon from '@material-ui/icons/CardMembership';
-import AOS from 'aos';
-import { InnerLayout } from '../styles/Layouts';
-import Title from './Title';
-import SmallTitle from './SmallTitle';
-import ResumeItem from './ResumeItem';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import styled from "styled-components";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import SchoolIcon from "@material-ui/icons/School";
+import CardMembershipIcon from "@material-ui/icons/CardMembership";
+import AOS from "aos";
+import { InnerLayout } from "../styles/Layouts";
+import Title from "./Title";
+import SmallTitle from "./SmallTitle";
+import ResumeItem from "./ResumeItem";
+import "aos/dist/aos.css";
 
 function Resume() {
   const briefcase = <BusinessCenterIcon />;
@@ -38,7 +38,7 @@ function Resume() {
             text="Demonstrated advanced proficiency in programming with Python and Object-Oriented Programming. Performed Data Analysis and Data Visualization on diverse and complex datasets as well as creating datasets from different sources using Web Scraping. Managed databases with SQL and PostgreSQL. Developed Machine Learning applications using supervised  and unsupervised algorithms"
           />
         </div>
-        {/* /* education */ }
+        {/* /* education */}
         <div className="small-title u-small-title-margin">
           <SmallTitle icon={school} title="Educational Qualifications" />
         </div>
@@ -56,7 +56,9 @@ function Resume() {
               year="August 2014 - July 2018"
               title="Masters in Physics"
               subTitle="University of Helsinki"
-              text={'Graduated with M.Sc. in Physics with specializing in materials and nanophysics, have a demonstrated history of independent research work and independent thinking. Wrote my theis on "Study on crystallization tendency of disaccharides by X-ray scattering"'}
+              text={
+                'Graduated with M.Sc. in Physics with specializing in materials and nanophysics, have a demonstrated history of independent research work and independent thinking. Wrote my theis on "Study on crystallization tendency of disaccharides by X-ray scattering"'
+              }
             />
           </div>
         </div>
@@ -79,7 +81,9 @@ function Resume() {
               year="December 2020"
               title="JavaScript Algorithms and Data Structures"
               subTitle="FreecodeCamp"
-              text={'In fundamentals you will be creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. You\'ll also learn two important programing styles or paradigms: Object Oriented Programing (OOP), and Functional Programing (FP).'}
+              text={
+                "In fundamentals you will be creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station. You'll also learn two important programing styles or paradigms: Object Oriented Programing (OOP), and Functional Programing (FP)."
+              }
             />
           </div>
           <div data-aos="fade-right">
@@ -103,10 +107,11 @@ function Resume() {
               year="September 2019"
               title="Python Fundamentals Track"
               subTitle="Datacamp"
-              text={'In this track, you\'ll learn the Python basics you need to start on your programming journey, including how to clean real-world data ready for analysis, use data visualization libraries, and even how to write your own Python functions. You will learn numpy, Matplotlib, pandas.'}
+              text={
+                "In this track, you'll learn the Python basics you need to start on your programming journey, including how to clean real-world data ready for analysis, use data visualization libraries, and even how to write your own Python functions. You will learn numpy, Matplotlib, pandas."
+              }
             />
           </div>
-
         </div>
       </InnerLayout>
     </ResumeStyled>
@@ -114,18 +119,15 @@ function Resume() {
 }
 
 const ResumeStyled = styled.section`
-    .small-title{
-        padding-bottom: 3rem;
-        
-    }
-    .u-small-title-margin{
-        margin-top: 4rem;
-        
-        
-    }
+  .small-title {
+    padding-bottom: 3rem;
+  }
+  .u-small-title-margin {
+    margin-top: 4rem;
+  }
 
-    .resume-content{
-        border-left: 2px solid var(--border-color);
-    }
+  .resume-content {
+    border-left: 2px solid var(--border-color);
+  }
 `;
 export default Resume;

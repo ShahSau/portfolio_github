@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { MainLayout } from '../styles/Layouts';
+import React from "react";
+import styled from "styled-components";
+import { MainLayout } from "../styles/Layouts";
 import { Link } from "react-router-dom";
 function PageNotFound() {
   return (
@@ -14,14 +14,7 @@ function PageNotFound() {
             Maybe this page moved? Got deleted? Is hiding out in quarantine?
             Never existed in the first place?
             <p>
-              Let &apos;s go
-              {' '}
-              <Link to="/">
-                Home
-              </Link>
-              
-              {' '}
-              and try from there.
+              Let &apos;s go <Link to="/">Home</Link> and try from there.
             </p>
           </div>
         </div>
@@ -31,31 +24,30 @@ function PageNotFound() {
 }
 
 const NoPageStyled = styled.header`
-.mainbox {
-   
+  .mainbox {
     margin: auto;
     height: 600px;
     width: 600px;
     position: relative;
   }
-  
-    .err {
-      color: #ffffff;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 20%;
-      top: 8%;
-    }
-    .err1 {
-        color: #ffffff;
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 11rem;
-        position:absolute;
-        left: 44%;
-        top: 8%;
-      }
-  
+
+  .err {
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 20%;
+    top: 8%;
+  }
+  .err1 {
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 44%;
+    top: 8%;
+  }
+
   .far {
     position: absolute;
     font-size: 8.5rem;
@@ -63,31 +55,31 @@ const NoPageStyled = styled.header`
     top: 15%;
     color: #ffffff;
   }
-  
-   .err2 {
-      color: #ffffff;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 11rem;
-      position:absolute;
-      left: 68%;
-      top: 8%;
-    }
-  
+
+  .err2 {
+    color: #ffffff;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 68%;
+    top: 8%;
+  }
+
   .msg {
-      text-align: center;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 1.6rem;
-      position:absolute;
-      left: 16%;
-      top: 45%;
-      width: 75%;
-    }
-  
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }
+
   a {
     text-decoration: none;
     color: white;
   }
-  
+
   a:hover {
     text-decoration: underline;
   }

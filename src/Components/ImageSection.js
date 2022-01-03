@@ -5,9 +5,6 @@ import PrimaryButton from "./PrimaryButton";
 function ImageSection() {
   return (
     <ImageSectionStyled>
-      {/* <div className="left-content">
-                <img src={resume} alt=""/>
-            </div> */}
       <div className="right-content">
         <h4>
           Hi there,<span>👋</span>

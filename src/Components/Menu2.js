@@ -1,86 +1,76 @@
-import React from 'react';
-import styled from 'styled-components';
-import GitHub from '@material-ui/icons/GitHub';
-import LanguageIcon from '@material-ui/icons/Language';
-import YouTubeIcon from '@material-ui/icons/YouTube';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+import React from "react";
+import styled from "styled-components";
+import GitHub from "@material-ui/icons/GitHub";
+import LanguageIcon from "@material-ui/icons/Language";
+import YouTubeIcon from "@material-ui/icons/YouTube";
+import Card from "@material-ui/core/Card";
+import CardActionArea from "@material-ui/core/CardActionArea";
+import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
+import CardMedia from "@material-ui/core/CardMedia";
 
-import Typography from '@material-ui/core/Typography';
+import Typography from "@material-ui/core/Typography";
 
 function Menu({ menuItem }) {
-  // const classes = useStyles();
   return (
     <MenuItemStyled>
-      {
+      {menuItem.map((item) => (
+        <>
+          <Card className="root">
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                alt={item.title}
+                height="250"
+                image={item.image}
+                title={item.title}
+                className="img"
+              />
 
-    menuItem.map((item) => (
-
-      <>
-        <Card className="root">
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              alt={item.title}
-              height="250"
-              image={item.image}
-              title={item.title}
-              className="img"
-            />
-
-            <CardContent className="card">
-              <Typography gutterBottom variant="h6" component="h5">
-                {item.title}
-              </Typography>
-              <div className="details">
-                <Typography variant="body2" color="#fff" component="p">
-                  Details:
-                  {' '}
-                  {item.text}
-                  <div className="inline">
-                    Technologies:
-                    {item.technologies.map((newitem) => (
-                      <>
-                        {newitem}
-                        {' '}
-                      </>
-                    ))}
-                  </div>
+              <CardContent className="card">
+                <Typography gutterBottom variant="h6" component="h5">
+                  {item.title}
                 </Typography>
-              </div>
+                <div className="details">
+                  <Typography variant="body2" color="#fff" component="p">
+                    Details: {item.text}
+                    <div className="inline">
+                      Technologies:
+                      {item.technologies.map((newitem) => (
+                        <>{newitem} </>
+                      ))}
+                    </div>
+                  </Typography>
+                </div>
 
-              <CardActions style={{ justifyContent: 'center' }} className="links">
-
-                <a href={item.link1} target="_blank" rel="noreferrer">
-                  <GitHub />
-                </a>
-
-                {item.link2 !== '' && (
-                <li>
-                  <a href={item.link2} target="_blank" rel="noreferrer">
-                    <LanguageIcon />
+                <CardActions
+                  style={{ justifyContent: "center" }}
+                  className="links"
+                >
+                  <a href={item.link1} target="_blank" rel="noreferrer">
+                    <GitHub />
                   </a>
-                </li>
-                )}
-                {item.link3 !== '' && (
-                <li>
-                  <a href={item.link3} target="_blank" rel="noreferrer">
-                    <YouTubeIcon />
-                  </a>
-                </li>
-                )}
-              </CardActions>
-            </CardContent>
-          </CardActionArea>
 
-        </Card>
-      </>
-
-    ))
-  }
+                  {item.link2 !== "" && (
+                    <li>
+                      <a href={item.link2} target="_blank" rel="noreferrer">
+                        <LanguageIcon />
+                      </a>
+                    </li>
+                  )}
+                  {item.link3 !== "" && (
+                    <li>
+                      <a href={item.link3} target="_blank" rel="noreferrer">
+                        <YouTubeIcon />
+                      </a>
+                    </li>
+                  )}
+                </CardActions>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+        </>
+      ))}
     </MenuItemStyled>
   );
 }

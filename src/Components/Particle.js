@@ -1,6 +1,6 @@
-import Particles from 'react-particles-js';
+import Particles from "react-particles-js";
 
-import React from 'react';
+import React from "react";
 
 function Particle() {
   return (
@@ -18,10 +18,10 @@ function Particle() {
               },
             },
             color: {
-              value: '#0f90bf',  //   #636e72
+              value: "#0f90bf", //   #636e72
             },
             shape: {
-              type: 'circle',
+              type: "circle",
               stroke: {
                 width: 0,
               },
@@ -36,7 +36,7 @@ function Particle() {
               width: 2,
               shadow: {
                 enable: true,
-                color: '#000', //#e74c3c
+                color: "#000", //#e74c3c
                 blur: 5,
               },
             },
@@ -44,7 +44,7 @@ function Particle() {
               enable: true,
               random: true,
               speed: 0.6,
-              out_mode: 'bounce',
+              out_mode: "bounce",
               bounce: false,
               attract: {
                 rotateX: 600,
@@ -68,16 +68,15 @@ function Particle() {
             },
           },
           interactivity: {
-            detect_on: 'canvas',
+            detect_on: "canvas",
             events: {
               onhover: {
                 enable: true,
-                mode: 'repulse',
+                mode: "repulse",
               },
               onclick: {
                 enable: true,
-                mode: 'bubble',
-
+                mode: "bubble",
               },
               resize: true,
             },
@@ -108,7 +107,6 @@ function Particle() {
             },
           },
           retina_detect: true,
-
         }}
       />
     </>
