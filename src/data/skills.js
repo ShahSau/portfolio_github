@@ -17,10 +17,10 @@ import material from '../img/skills/material.png'
 import tail from '../img/skills/tail.svg'
 
 //backend
-import node from '../img/skills/node.png'
+import node from '../img/skills/node2.png'
 import express from '../img/skills/express.png'
 import flask from '../img/skills/flask.png'
-import django from '../img/skills/django.png'
+import django from '../img/skills/django2.png'
 import djREST from '../img/skills/djREST.webp'
 import graph from '../img/skills/graph.png'
 import rest from '../img/skills/rest.png'
@@ -31,7 +31,7 @@ import cypress from '../img/skills/cypress.png'
 import mocha from '../img/skills/mocha.png'
 import aws from '../img/skills/aws.png'
 import heroku from '../img/skills/heroku.png'
-import netlify from '../img/skills/netlify2.png'
+import netlify from '../img/skills/netlify.png'
 
 //data Science
 import sklearn from '../img/skills/sklearn.png'
@@ -52,7 +52,7 @@ import firebase from '../img/skills/firebase.png'
 import figma from '../img/skills/figma.png'
 import native from '../img/skills/native.png'
 import linux from '../img/skills/linux.webp'
-import tableau from '../img/skills/Tableau.png'
+import tableau from '../img/skills/tableau.png'
 import docker from '../img/skills/docker.png'
 const skills = [
   {
@@ -61,7 +61,6 @@ const skills = [
     image: [
       python,
       js,
-      
       Cs,
       c,
       R,
@@ -146,5 +145,5 @@ const skills = [
     ],
   },
 ];
-// images are saved in imagebb.com
+
 export default skills;

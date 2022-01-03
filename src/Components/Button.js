@@ -17,7 +17,6 @@ const ButtonStyled = styled.button`
   outline: none;
   border: none;
   background-color: var(--background-light-color-2);
-
   padding: 0.4rem 2rem;
   font-size: inherit;
   color: var(--white-color);

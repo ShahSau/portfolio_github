@@ -17,7 +17,7 @@ function ContactItem({ title, icon, cont1, cont2 = "" }) {
 
 const ContactItemStyled = styled.div`
   padding: 1.5rem 2rem;
-  background-color: var(--background-dark-grey);
+  // background-color: var(--background-dark-grey);
   display: flex;
   align-items: center;
 
@@ -26,23 +26,19 @@ const ContactItemStyled = styled.div`
   }
   &:hover {
     transform: rotate(0deg) scale(1);
-    transition: all 0.5s ease-in-out;
-
-    background: linear-gradient(45deg, #708090, #696969, #a9a9a9);
-
+    transition: all 0.01s ease-in-out;
+    background-color: var(--background-dark-grey);
     .before {
       display: none;
     }
-    // .left-content{
-    //     display:block;
-    // }
+
     .right-content h6 {
       display: block;
-      color: black;
+      color: var(--white-color);
     }
     .right-content p {
       display: block;
-      color: black;
+      color: var(--white-color);
     }
   }
   .before {
@@ -57,20 +53,6 @@ const ContactItemStyled = styled.div`
       left: 50%;
     }
   }
-  // .left-content{
-  //     padding: 1.5rem;
-  //     border: 1px solid var(--border-color);
-  //     font-size: 2rem;
-  //     display: flex;
-  //     align-items: left;
-  //     justify-content: left;
-  //     margin-right: 1.5rem;
-
-  //     display:none;
-  //     svg{
-  //         font-size: 2.3rem;
-  //     }
-  // }
 
   .right-content {
     h6 {

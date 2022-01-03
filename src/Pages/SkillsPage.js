@@ -3,19 +3,13 @@ import styled from "styled-components";
 import Title from "../Components/Title";
 import skills from "../data/skills";
 import { MainLayout, InnerLayout } from "../styles/Layouts";
-
+import tech from "../data/tech";
 // import {motion} from "framer-motion";
 
 function SkillPage() {
   return (
     <MainLayout>
       <SkillsStyled>
-        {/* <motion.div
-        initial={{opacity: 0,x:-250 , y:0}}
-        animate={{opacity: 1,x:1, y:1}}
-        exit={{opacity: 1,y:0, x:250}}
-        transition={{ duration: 2.5}}
-    > */}
         <Title title="Skills" span="Skills" />
         <InnerLayout className="skill">
           {skills.map((skill) => (
@@ -31,7 +25,6 @@ function SkillPage() {
             </div>
           ))}
         </InnerLayout>
-        {/* </motion.div> */}
       </SkillsStyled>
     </MainLayout>
   );
@@ -42,13 +35,15 @@ const SkillsStyled = styled.div`
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
-
+    .title {
+      color: #000 !important;
+    }
     @media screen and (max-width: 770px) {
       grid-template-columns: repeat(1, 1fr);
     }
     .skill-item {
       // background: linear-gradient(45deg ,#708090, #696969, #A9A9A9);
-      background: #4b4d54;
+      background: #2e3445;
       padding: 1rem 1rem;
       cursor: pointer;
 
@@ -57,8 +52,8 @@ const SkillsStyled = styled.div`
         transition: all 0.4s ease-in-out;
 
         .title {
-          color: #171717;
-          text-shadow: 1px 1.25px #a9a9a9;
+          //color: #171717;
+          // text-shadow: 1px 1.25px #a9a9a9;
           transition: all 0.4s ease-in-out;
         }
       }
@@ -72,7 +67,7 @@ const SkillsStyled = styled.div`
       text-align: center;
 
       img {
-        width: 10%;
+        width: 15%;
         object-fit: scale-down;
         margin: 5px;
         float: left;
