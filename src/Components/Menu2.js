@@ -34,7 +34,9 @@ function Menu({ menuItem }) {
                 <div className="details">
                   <Typography variant="body2" color="#fff" component="p">
                     Details: {item.text}
-                    <div className="inline">
+                  </Typography>
+                  <Typography variant="body2" color="#fff" component="p">
+                    <div>
                       Technologies:
                       {item.technologies.map((newitem) => (
                         <>{newitem} </>
@@ -89,12 +91,14 @@ const MenuItemStyled = styled.div`
       textAlign: center;
       flexGrow: 1;
       background-color: #191D2B;
+      border-radius: 10px;
+      box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
       &:hover{
         transform: scale3d(1.02, 1.02, 1);
         transition: all .4s ease-in-out;
         boxShadow: 3px 3px #fff; 
         .card{
-          transform: translateY(-50%);
+          transform: translateY(-25%);
           
         }
         .img{
@@ -107,22 +111,12 @@ const MenuItemStyled = styled.div`
       visibility:visible;
     }
     .card{
-      background-color: #191D2B;
+       background-color: #191D2B;
       color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      
-      // &:hover{
-      //     background-color: #778899;
-      //     color:#000;
-      //  },
     },  
-    
-   
-
-
-
     `;
 
 export default Menu;
