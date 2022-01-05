@@ -106,14 +106,14 @@ const MenuItemStyled = styled.div`
       
         .card{
           transform: translateY(-25%);
-          visibility:hidden;
+          visibility:visible;
           
         }
         .img{
-          visibility:hidden;
+          visibility:visible;
         }
         .but{
-          visibility:visible;
+      visibility:hidden;
           outline: none;
       border: none;
       background-color: var(--background-light-color-2);
