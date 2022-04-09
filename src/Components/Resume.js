@@ -29,7 +29,14 @@ function Resume() {
         <div className="small-title">
           <SmallTitle icon={briefcase} title="Working Experience" />
         </div>
-
+    <div className="resume-content">
+          <ResumeItem
+            year="February 2022 - on Going"
+            title="Software Developer"
+            subTitle="Mentura Group Oy"
+            text="Building software using technologies like: React, Express, Node, Kafka, MongoDb, terraform, scikit learn"
+          />
+        </div>
         <div className="resume-content">
           <ResumeItem
             year="April 2020 - November 2020"
