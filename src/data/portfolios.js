@@ -83,17 +83,6 @@ const portfolios = [
     technologies: ['flask,', 'flask sqlalchemy,', 'HTML5,', 'CSS3,', 'Docker,', 'REST API.'],
     text: 'A simple weather app.',
   },
-  //     {
-  //         id: 6,
-  //         category: 'FrontEnd',
-  //         image: img6,
-  //         link1: 'https://github.com/ShahSau/React/tree/main/Pokemon%20',
-  //         link2: 'https://6091a5202c719311ad1175be--epic-leakey-1c63a6.netlify.app/',
-  //         link3: 'https://youtu.be/MevCWZgfxuE',
-  //         title: 'Pokemon',
-  //         technologies:["React,", "Bootstrap,", "REST API."],
-  //         text: 'Data fetched from pokemon API and displayed using react.'
-  //     },
   {
     id: 9,
     category: 'Backend',
@@ -118,7 +107,7 @@ const portfolios = [
   },
   {
     id: 13,
-    category: 'Design',
+    category: 'Others',
     image: img13,
     link1: 'https://github.com/ShahSau/React/tree/main/Rent-Car',
     link2: '',
