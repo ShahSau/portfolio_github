@@ -16,7 +16,7 @@ function Button({ filter, button }) {
 const ButtonStyled = styled.button`
   outline: none;
   border: none;
-  background-color: var(--background-light-color-2);
+  background-color: var(--primary-color);
   padding: 0.4rem 2rem;
   font-size: inherit;
   color: var(--white-color);

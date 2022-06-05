@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 .dark-theme{
-    --primary-color: #2b7acf;  
+    --primary-color:#2b7acf;    //;
     --primary-color-light: #27609c;  
     --secondary-color: #6c757d;
     --background-dark-color: #0F1624;    // #10121A; 

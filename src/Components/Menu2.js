@@ -31,7 +31,7 @@ function Menu({ menuItem }) {
                 {item.title}
               </Typography>
               <button className="but">
-              <Link to={item.title}>Case Study</Link>
+              <Link to={`/portfolios/${item.title}`}>Case Study</Link>
               </button>
               <div className="details">
                 <Typography variant="body2" color="#fff" component="p">

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import  React,{ useState, useEffect } from 'react';
 import styled from 'styled-components';
 // import Brightness4Icon from '@material-ui/icons/Brightness4';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -13,6 +13,8 @@ import PortfoliosPage from './Pages/PortfoliosPage';
 import ContactPage from './Pages/ContactPage';
 import SkillsPage from './Pages/SkillsPage';
 import PageNotFound from './Pages/PageNotFound';
+import DetailsPage from './Pages/DetailsPage';
+
 // import Switch from '@material-ui/core/Switch'
 
 function App() {
@@ -86,11 +88,11 @@ function App() {
             <Route path="/about" exact>
               <AboutPage />
             </Route>
-            {/* <Route path="/resume" exact>
-              <ResumePage />
-            </Route> */}
             <Route path="/portfolios" exact>
               <PortfoliosPage />
+            </Route>
+            <Route path="/portfolios/:name" >
+              <DetailsPage />
             </Route>
             <Route path="/skills" exact>
               <SkillsPage />

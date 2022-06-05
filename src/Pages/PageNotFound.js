@@ -13,9 +13,9 @@ function PageNotFound() {
           <div className="msg">
             Maybe this page moved? Got deleted? Is hiding out in quarantine?
             Never existed in the first place?
-            <p>
-              Let &apos;s go <Link to="/">Home</Link> and try from there.
-            </p>
+            <br />
+              Let&apos;s go to <Link to="/" className="spa">Home</Link> and try from there.
+            
           </div>
         </div>
       </NoPageStyled>
@@ -25,23 +25,27 @@ function PageNotFound() {
 
 const NoPageStyled = styled.header`
   .mainbox {
-    margin: auto;
-    height: 600px;
-    width: 600px;
-    position: relative;
+    width: 100%;
+  height: 100vh;
+  position: relative;
+  }
+  .spa{
+    color: var(--primary-color);
+    
+    font-size: 1.6rem;
   }
 
   .err {
-    color: #ffffff;
-    font-family: "Nunito Sans", sans-serif;
+    color:var(--white-color);
+  
     font-size: 11rem;
     position: absolute;
     left: 20%;
     top: 8%;
   }
   .err1 {
-    color: #ffffff;
-    font-family: "Nunito Sans", sans-serif;
+    color: var(--primary-color);
+ 
     font-size: 11rem;
     position: absolute;
     left: 44%;
@@ -57,8 +61,8 @@ const NoPageStyled = styled.header`
   }
 
   .err2 {
-    color: #ffffff;
-    font-family: "Nunito Sans", sans-serif;
+    color: var(--white-color);
+    
     font-size: 11rem;
     position: absolute;
     left: 68%;
@@ -67,7 +71,7 @@ const NoPageStyled = styled.header`
 
   .msg {
     text-align: center;
-    font-family: "Nunito Sans", sans-serif;
+    
     font-size: 1.6rem;
     position: absolute;
     left: 16%;
