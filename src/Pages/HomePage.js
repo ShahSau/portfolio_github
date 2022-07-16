@@ -9,9 +9,9 @@ import Particle from "../Components/Particle";
 function HomePage() {
   return (
     <HomePageStyled>
-      <div className="particle-con">
+      {/* <div className="particle-con">
         <Particle />
-      </div>
+      </div> */}
       <div className="typography">
         <h1>
           Hi, I&apos;m <span>Shahriar</span> 
@@ -23,10 +23,10 @@ function HomePage() {
             steps={[
               "A fullstack developer",
               2000,
-              "A software enthusiast",
+              "A data enthusiast",
               2000,
-              "Lifelong student of programming",
-              2000,
+              // "Lifelong student of programming",
+              // 2000,
             ]}
           />
         </p>
@@ -38,7 +38,6 @@ function HomePage() {
           >
             <LinkedInIcon />
           </a>
-
           <a href="https://github.com/ShahSau" className="icon i-github">
             <GithubIcon />
           </a>
