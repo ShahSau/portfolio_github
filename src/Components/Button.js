@@ -5,7 +5,7 @@ function Button({ filter, button }) {
   return (
     <ButtonsStyled>
       {button.map((but, i) => (
-        <ButtonStyled key={i} onClick={() => filter(but)}>
+        <ButtonStyled key={i} onClick={() => filter(but)}> 
           {but}
         </ButtonStyled>
       ))}
