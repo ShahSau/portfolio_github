@@ -7,11 +7,12 @@ import Typical from "react-typical";
 import Particle from "../Components/Particle";
 
 function HomePage() {
+  
   return (
     <HomePageStyled>
-      {/* <div className="particle-con">
-        <Particle />
-      </div> */}
+      <div className="particle-con"> 
+        <Particle /> 
+      </div>
       <div className="typography">
         <h1>
           Hi, I&apos;m <span>Shahriar</span> 
@@ -21,12 +22,12 @@ function HomePage() {
             loop={Infinity}
             wrapper="p"
             steps={[
-              "A fullstack developer",
+              "Software developer",
               2000,
-              "A data enthusiast",
+              "Data enthusiast",
               2000,
-              // "Lifelong student of programming",
-              // 2000,
+              "Website Builder",
+              2000,
             ]}
           />
         </p>
@@ -54,7 +55,11 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
-
+  .particle-con {
+    position: absolute;
+    width: 90%;
+    height: 100vh;
+  }
   .typography {
     position: absolute;
     top: 50%;

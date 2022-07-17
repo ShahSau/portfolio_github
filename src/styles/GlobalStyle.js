@@ -114,6 +114,7 @@ h6{
       top: 3%; 
       display: none;
       z-index: 15;
+      color: var(--white-color) !important;
       svg{
           font-size: 3rem;
       }
