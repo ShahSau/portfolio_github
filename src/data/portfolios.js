@@ -107,7 +107,7 @@ const portfolios = [
   },
   {
     id: 13,
-    category: 'Others',
+    category: 'UI/UX',
     image: img13,
     link1: 'https://github.com/ShahSau/React/tree/main/Rent-Car',
     link2: '',
