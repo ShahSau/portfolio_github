@@ -4,15 +4,15 @@ import GithubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Typical from "react-typical";
-import Particle from "../Components/Particle";
+//import Particle from "../Components/Particle";
 
 function HomePage() {
   
   return (
     <HomePageStyled>
-      <div className="particle-con"> 
+      {/* <div className="particle-con"> 
         <Particle /> 
-      </div>
+      </div> */}
       <div className="typography">
         <h1>
           Hi, I&apos;m <span>Shahriar</span> 

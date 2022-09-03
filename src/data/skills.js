@@ -15,7 +15,7 @@ import redux from '../img/skills/redux.svg'
 import boot from '../img/skills/boot.png'
 import material from '../img/skills/material.png'
 import tail from '../img/skills/tail.svg'
-
+import next from '../img/skills/nextjs.png'
 //backend
 import node from '../img/skills/node2.png'
 import express from '../img/skills/express.png'
@@ -24,6 +24,7 @@ import django from '../img/skills/django2.png'
 import djREST from '../img/skills/djREST.webp'
 import graph from '../img/skills/graph.png'
 import rest from '../img/skills/rest.png'
+import jwt from '../img/skills/jwt.svg'
 
 ///testing
 import jest from '../img/skills/jest.png'
@@ -79,7 +80,8 @@ const skills = [
     //§vue,
     boot,
     material,
-    tail
+    tail,
+    next
     ],
   },
   {
@@ -93,7 +95,7 @@ const skills = [
       djREST,
       graph,
       rest,
-    
+      jwt
     ],
   },
   {
