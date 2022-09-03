@@ -10,15 +10,16 @@ const allButtons = ["All", ...new Set(portfolios.map((item) => item.category))];
 function PortfoliosPage() {
   const [menuItem, setMenuItems] = useState(portfolios);
   const [button, setButtons] = useState(allButtons);
-
+  const [activeFilter, setActiveFilter] = useState('All');
   const filter = (button) => {
     if (button === "All") {
       setMenuItems(portfolios);
       return;
     }
-
+    // console.log({ button });
     const filteredData = portfolios.filter((item) => item.category === button);
     setMenuItems(filteredData);
+
   };
   return (
     <MainLayout>

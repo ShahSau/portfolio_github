@@ -61,9 +61,9 @@ const skills = [
     image: [
       python,
       js,
-      Cs,
+      //Cs,
       c,
-      R,
+      //R,
       
     ],
   },
@@ -76,7 +76,7 @@ const skills = [
     react,
     redux,
     TSc,
-    vue,
+    //§vue,
     boot,
     material,
     tail
@@ -88,7 +88,7 @@ const skills = [
     image: [
       node,
       express,
-      flask,
+      //flask,
       django,
       djREST,
       graph,
@@ -102,7 +102,7 @@ const skills = [
     image: [
       jest,
       cypress,
-      mocha,
+      //mocha,
       heroku,
       aws,
       netlify

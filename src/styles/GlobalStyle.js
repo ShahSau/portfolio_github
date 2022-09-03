@@ -86,7 +86,10 @@ h6{
     margin-bottom: 4rem;
 }
 
-
+.item-active {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
 //Floting Toggler
 .light-dark-mode{
     position: fixed;

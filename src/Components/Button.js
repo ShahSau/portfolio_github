@@ -7,6 +7,7 @@ function Button({ filter, button }) {
       {button.map((but, i) => (
         <ButtonStyled key={i} onClick={() => filter(but)}> 
           {but}
+          {console.log({ but })}
         </ButtonStyled>
       ))}
     </ButtonsStyled>
