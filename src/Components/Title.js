@@ -70,4 +70,5 @@ const TitleStyled = styled.div`
   }
 `;
 
+
 export default Title;
